@@ -201,6 +201,17 @@
       margin-bottom: 12px;
     }
 
+    .about-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #315b3b;
+      font-weight: 700;
+    }
+
+    .about-link:hover {
+      text-decoration: underline;
+    }
+
     /* Research interests */
 
     .interests {
@@ -272,6 +283,17 @@
     .research-item p {
       color: #59645b;
       margin-bottom: 12px;
+    }
+
+    .research-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #315b3b;
+      font-weight: 700;
+    }
+
+    .research-link:hover {
+      text-decoration: underline;
     }
 
     /* Education */
@@ -430,9 +452,11 @@
 
 <body>
 
+
   <!-- Navigation -->
 
   <nav>
+
     <div class="nav-container">
 
       <a href="index.html" class="logo">
@@ -440,14 +464,31 @@
       </a>
 
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="research.html">Research</a>
-        <a href="#education">Education</a>
-        <a href="#photos">Field & Lab</a>
-        <a href="#contact">Contact</a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="research.html">
+          Research
+        </a>
+
+        <a href="#education">
+          Education
+        </a>
+
+        <a href="#photos">
+          Field & Lab
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
 
     </div>
+
   </nav>
 
 
@@ -478,7 +519,7 @@
             Explore My Research
           </a>
 
-          <a class="button secondary" href="#about">
+          <a class="button secondary" href="about.html">
             About Me
           </a>
 
@@ -494,7 +535,7 @@
         <img
           src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=80"
           alt="Green plant leaves">
-          
+
       </div>
 
     </div>
@@ -502,7 +543,7 @@
   </header>
 
 
-  <!-- About -->
+  <!-- About Preview -->
 
   <section id="about">
 
@@ -511,7 +552,7 @@
       <div>
 
         <div class="section-label">
-          About My Research
+          About Me
         </div>
 
         <h2>
@@ -537,6 +578,10 @@
           cultivated crops interacts with environmental variation, with applications
           to crop adaptation, improvement, and sustainable production.
         </p>
+
+        <a class="about-link" href="about.html">
+          Read more about me →
+        </a>
 
       </div>
 
@@ -567,6 +612,7 @@
 
 
       <div class="interest-grid">
+
 
         <div class="interest-card">
 
@@ -652,8 +698,6 @@
       <div class="research-list">
 
 
-        <!-- Research 1 -->
-
         <article class="research-item">
 
           <h3>
@@ -672,8 +716,6 @@
 
         </article>
 
-
-        <!-- Research 2 -->
 
         <article class="research-item">
 
@@ -700,8 +742,6 @@
 
         </article>
 
-
-        <!-- Research 3 -->
 
         <article class="research-item">
 
@@ -938,6 +978,7 @@
     </div>
 
   </footer>
+
 
 </body>
 </html>
