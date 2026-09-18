@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Experience | Deva Raj Khanal</title>
+
+  <meta name="description" content="Research and horticultural experience of Deva Raj Khanal, including plant biology, botanical collections, plant phenotyping, environmental research, phylogenetics, and horticultural field work.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #243126;
+      background: #f7f8f5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e3e7e1;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1150px;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      color: #536056;
+    }
+
+    .nav-links a:hover {
+      color: #315b3b;
+    }
+
+    /* Header */
+
+    .page-header {
+      padding: 90px 0 80px;
+      background: #eef3ec;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.78rem;
+      color: #58735d;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      line-height: 1.05;
+      color: #1f3024;
+      max-width: 850px;
+      margin-bottom: 25px;
+    }
+
+    .page-intro {
+      font-size: 1.2rem;
+      color: #536056;
+      max-width: 800px;
+    }
+
+    /* Sections */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-size: 0.75rem;
+      color: #66806b;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      color: #1f3024;
+      margin-bottom: 30px;
+    }
+
+    /* Experience Cards */
+
+    .experience-list {
+      display: grid;
+      gap: 30px;
+    }
+
+    .experience-card {
+      background: #ffffff;
+      border: 1px solid #dfe5dd;
+      border-radius: 8px;
+      padding: 38px;
+    }
+
+    .experience-top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+
+    .experience-card h3 {
+      color: #284a31;
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .institution {
+      color: #59645b;
+      font-size: 1rem;
+    }
+
+    .dates {
+      color: #66806b;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .experience-card p {
+      color: #59645b;
+      margin-bottom: 18px;
+    }
+
+    .experience-card ul {
+      margin-left: 20px;
+      color: #59645b;
+    }
+
+    .experience-card li {
+      margin-bottom: 8px;
+      padding-left: 5px;
+    }
+
+    /* Skills */
+
+    .skills {
+      background: #f1f4ef;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 40px;
+    }
+
+    .skill-card {
+      background: #ffffff;
+      border: 1px solid #dfe5dd;
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .skill-card h3 {
+      color: #284a31;
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+    }
+
+    .skill-card p {
+      color: #626d64;
+    }
+
+    /* Field Experience */
+
+    .field-section {
+      background: #ffffff;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .field-card {
+      padding: 30px;
+      background: #f7f8f5;
+      border: 1px solid #dfe5dd;
+      border-radius: 8px;
+    }
+
+    .field-card h3 {
+      color: #284a31;
+      margin-bottom: 12px;
+    }
+
+    .field-card p {
+      color: #626d64;
+    }
+
+    /* Closing */
+
+    .closing {
+      background: #eef3ec;
+      text-align: center;
+    }
+
+    .closing-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .closing p {
+      color: #59645b;
+      font-size: 1.08rem;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 5px;
+      background: #315b3b;
+      color: white;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background: #25482d;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #1f3024;
+      color: #dce4dc;
+      padding: 28px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 800px) {
+
+      .nav-container {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .page-header {
+        padding: 65px 0;
+      }
+
+      .experience-top {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .dates {
+        text-align: left;
+      }
+
+      .skill-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .field-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .experience-card {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+
+  <nav>
+
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        Deva Raj Khanal
+      </a>
+
+      <div class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="research.html">
+          Research
+        </a>
+
+        <a href="experience.html">
+          Experience
+        </a>
+
+        <a href="index.html#education">
+          Education
+        </a>
+
+        <a href="index.html#contact">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- Header -->
+
+  <header class="page-header">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Experience
+      </div>
+
+      <h1>
+        Research, fieldwork, and plant science
+      </h1>
+
+      <p class="page-intro">
+        My experience spans plant biology, horticulture, botanical collections,
+        plant phenotyping, environmental research, molecular approaches,
+        phylogenetics, and field-based work with plants.
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <!-- Main Research Experience -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-label">
+        Research Experience
+      </div>
+
+      <h2>
+        Academic and research experience
+      </h2>
+
+
+      <div class="experience-list">
+
+
+        <!-- SLU -->
+
+        <article class="experience-card">
+
+          <div class="experience-top">
+
+            <div>
+
+              <h3>
+                Graduate Research Assistant
+              </h3>
+
+              <div class="institution">
+                Saint Louis University · Biology Department ·
+                Missouri Botanical Garden / William L. Brown Center
+              </div>
+
+            </div>
+
+            <div class="dates">
+              2022–2026
+            </div>
+
+          </div>
+
+
+          <p>
+            My graduate research focused on the climatic environment of
+            cultivated mango (<i>Mangifera indica</i> L.) and the relationship
+            between cultivated plants and environmental variation.
+          </p>
+
+
+          <ul>
+
+            <li>
+              Investigated climatic patterns associated with cultivated mango
+              using georeferenced botanical records and environmental datasets.
+            </li>
+
+            <li>
+              Examined temperature, precipitation, geographic variation,
+              and climatic conditions associated with cultivated mango.
+            </li>
+
+            <li>
+              Worked with herbarium specimens, botanical collections,
+              specimen labeling, filing, metadata, and destructive sampling.
+            </li>
+
+            <li>
+              Contributed to <i>Mangifera</i> phylogenomics through specimen
+              organization and DNA extraction and quality assessment.
+            </li>
+
+            <li>
+              Conducted hyperspectral leaf scanning and plant trait data
+              collection.
+            </li>
+
+            <li>
+              Supported perennial crop research and horticultural field
+              activities.
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- SDSU -->
+
+        <article class="experience-card">
+
+          <div class="experience-top">
+
+            <div>
+
+              <h3>
+                Graduate Research & Teaching Assistant
+              </h3>
+
+              <div class="institution">
+                South Dakota State University
+              </div>
+
+            </div>
+
+            <div class="dates">
+              2019–2022
+            </div>
+
+          </div>
+
+
+          <p>
+            My graduate research at South Dakota State University focused on
+            the evolutionary history, phylogenetics, hybridization, and
+            identification of the Russian thistle group (<i>Salsola</i> spp.).
+          </p>
+
+
+          <ul>
+
+            <li>
+              Investigated phylogenetic relationships within the Russian
+              thistle group.
+            </li>
+
+            <li>
+              Studied plant diversity, classification, identification,
+              and evolutionary relationships.
+            </li>
+
+            <li>
+              Worked with plant samples, voucher specimens, and molecular
+              records.
+            </li>
+
+            <li>
+              Participated in target-capture sequencing and related
+              molecular research approaches.
+            </li>
+
+            <li>
+              Maintained plant sample inventories and associated research
+              records.
+            </li>
+
+            <li>
+              Contributed to research and teaching activities within the
+              university biology program.
+            </li>
+
+          </ul>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills -->
+
+  <section class="skills">
+
+    <div class="container">
+
+      <div class="section-label">
+        Research Skills
+      </div>
+
+      <h2>
+        Methods and areas of experience
+      </h2>
+
+
+      <div class="skill-grid">
+
+
+        <div class="skill-card">
+
+          <h3>
+            Plant & Botanical Research
+          </h3>
+
+          <p>
+            Herbarium specimens, botanical collections, plant specimen
+            handling, voucher records, plant identification, metadata,
+            and documentation.
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            Plant Phenotyping
+          </h3>
+
+          <p>
+            Plant trait characterization, hyperspectral leaf scanning,
+            plant observations, trait data collection, and phenotypic
+            documentation.
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            Environmental Research
+          </h3>
+
+          <p>
+            Geographic and environmental datasets, climatic variables,
+            temperature and precipitation patterns, and environmental
+            variation.
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            Molecular Research
+          </h3>
+
+          <p>
+            DNA extraction, DNA quality assessment, molecular records,
+            plant sample organization, and target-capture sequencing
+            approaches.
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            Phylogenetics & Evolution
+          </h3>
+
+          <p>
+            Plant evolutionary relationships, phylogenetic research,
+            classification, species identification, and plant diversity.
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>
+            Horticulture & Fieldwork
+          </h3>
+
+          <p>
+            Perennial crop support, planting, plant care, weeding,
+            harvesting, vineyard weeding, tendril support, and pruning.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Field Experience -->
+
+  <section class="field-section">
+
+    <div class="container">
+
+      <div class="section-label">
+        Practical Experience
+      </div>
+
+      <h2>
+        Working with plants beyond the laboratory
+      </h2>
+
+      <div class="field-grid">
+
+
+        <div class="field-card">
+
+          <h3>
+            Perennial Crop Systems
+          </h3>
+
+          <p>
+            Experience supporting perennial crop research through planting,
+            plant care, weeding, harvesting, and general field maintenance.
+          </p>
+
+        </div>
+
+
+        <div class="field-card">
+
+          <h3>
+            Vineyard Work
+          </h3>
+
+          <p>
+            Practical experience with vineyard maintenance, including
+            weeding, tendril support, and pruning activities.
+          </p>
+
+        </div>
+
+
+        <div class="field-card">
+
+          <h3>
+            Russian Thistle
+          </h3>
+
+          <p>
+            Experience with Russian thistle identification, research,
+            and management as part of graduate research.
+          </p>
+
+        </div>
+
+
+        <div class="field-card">
+
+          <h3>
+            Botanical Collections
+          </h3>
+
+          <p>
+            Experience working with herbarium and botanical specimens,
+            including handling, labeling, filing, metadata, and research
+            documentation.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Closing -->
+
+  <section class="closing">
+
+    <div class="container closing-content">
+
+      <div class="eyebrow">
+        Research Portfolio
+      </div>
+
+      <h2>
+        Connecting experience with future research
+      </h2>
+
+      <p>
+        These experiences have shaped my interest in plant genetic resources,
+        phenotypic diversity, environmental adaptation, horticultural crops,
+        and applied plant research.
+      </p>
+
+      <a class="button" href="research.html">
+        Explore My Research
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 Deva Raj Khanal @Karkataceae
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
