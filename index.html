@@ -7,7 +7,7 @@
 
   <title>Deva Raj Khanal | Plant Biology & Horticulture</title>
 
-  <meta name="description" content="Deva Raj Khanal is a plant scientist with training in horticulture and plant biology and research experience in plant diversity, genetic resources, environmental variation, phenotypic traits, and horticultural crops.">
+  <meta name="description" content="Deva Raj Khanal is a plant scientist with training in horticulture and plant biology, with research experience in plant diversity, genetic resources, phenotypic traits, and climatic and environmental variation in cultivated plants.">
 
   <style>
     * {
@@ -18,9 +18,9 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-      color: #243126;
+      color: #26342d;
       background: #f7f8f5;
+      line-height: 1.65;
     }
 
     a {
@@ -28,306 +28,335 @@
       text-decoration: none;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1150px;
-      margin: 0 auto;
+    img {
+      display: block;
+      width: 100%;
     }
 
-    /* Navigation */
+    /* NAVIGATION */
 
     nav {
+      width: 100%;
+      border-bottom: 1px solid #dfe4df;
       background: #ffffff;
-      border-bottom: 1px solid #e3e7e1;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
-    .nav-container {
-      max-width: 1150px;
-      width: 90%;
+    .nav-inner {
+      max-width: 1180px;
       margin: 0 auto;
+      padding: 20px 28px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 18px 0;
     }
 
-    .logo {
-      font-size: 1.1rem;
+    .site-name {
       font-weight: 700;
+      font-size: 1rem;
       letter-spacing: 0.02em;
     }
 
     .nav-links {
       display: flex;
       gap: 28px;
+      font-size: 0.92rem;
     }
 
     .nav-links a {
-      font-size: 0.95rem;
-      color: #536056;
+      color: #536159;
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
-      color: #315b3b;
+      color: #315b43;
     }
 
-    /* Hero */
+    /* GENERAL */
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-label {
+      color: #55705f;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      font-weight: 600;
+      color: #26342d;
+      margin-bottom: 38px;
+    }
+
+    /* HERO */
 
     .hero {
-      padding: 90px 0 80px;
-      background: #eef3ec;
+      background: #ffffff;
+      padding: 100px 0 80px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 60px;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 70px;
       align-items: center;
     }
 
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      font-size: 0.78rem;
-      color: #58735d;
-      font-weight: 700;
-      margin-bottom: 18px;
+    .hero h1 {
+      font-size: clamp(3.2rem, 7vw, 6.2rem);
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      font-weight: 600;
+      color: #26342d;
+      margin-bottom: 30px;
     }
 
-    h1 {
-      font-size: clamp(2.8rem, 6vw, 5rem);
-      line-height: 1.05;
-      margin-bottom: 25px;
-      color: #1f3024;
-    }
-
-    .hero-text {
-      font-size: 1.2rem;
-      max-width: 680px;
-      color: #536056;
-      margin-bottom: 28px;
+    .hero-statement {
+      max-width: 650px;
+      font-size: clamp(1.25rem, 2vw, 1.65rem);
+      line-height: 1.45;
+      color: #526058;
+      margin-bottom: 32px;
     }
 
     .button {
       display: inline-block;
-      padding: 12px 22px;
-      border-radius: 5px;
-      background: #315b3b;
-      color: white;
+      padding: 13px 22px;
+      background: #315b43;
+      color: #ffffff;
+      font-size: 0.92rem;
       font-weight: 600;
+      border-radius: 3px;
+      transition: background 0.2s ease;
     }
 
     .button:hover {
-      background: #25482d;
+      background: #244735;
     }
 
     .hero-image {
-      height: 430px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .hero-image img {
-      width: 100%;
-      height: 100%;
+      height: 520px;
       object-fit: cover;
+      border-radius: 4px;
     }
 
-    /* Sections */
+    /* PHOTO STRIP */
 
-    section {
-      padding: 80px 0;
+    .photo-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 65px;
     }
 
-    .section-label {
-      text-transform: uppercase;
-      letter-spacing: 0.13em;
-      font-size: 0.75rem;
-      color: #66806b;
-      font-weight: 700;
-      margin-bottom: 12px;
+    .photo-strip figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 3px;
+      background: #e9ece8;
     }
 
-    h2 {
-      font-size: 2.3rem;
-      line-height: 1.2;
-      color: #1f3024;
-      margin-bottom: 22px;
+    .photo-strip img {
+      height: 245px;
+      object-fit: cover;
+      transition: transform 0.35s ease;
     }
 
-    .intro {
-      max-width: 780px;
-      font-size: 1.08rem;
-      color: #58635a;
+    .photo-strip figure:hover img {
+      transform: scale(1.03);
     }
 
-    /* About */
+    /* RESEARCH INTERESTS */
 
-    .about {
-      background: #ffffff;
-    }
-
-    .about-content {
-      max-width: 850px;
-    }
-
-    /* Research interests */
-
-    .interests {
-      background: #f7f8f5;
+    .research-section {
+      background: #eef2ed;
     }
 
     .interest-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-      margin-top: 40px;
     }
 
     .interest-card {
-      padding: 30px;
-      border: 1px solid #dfe5dd;
-      border-radius: 8px;
       background: #ffffff;
+      padding: 30px;
+      border: 1px solid #dfe5df;
+      min-height: 220px;
     }
 
-    .number {
-      font-size: 0.8rem;
-      color: #7b897d;
-      margin-bottom: 16px;
+    .interest-number {
+      font-size: 0.78rem;
+      color: #66806f;
       font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 22px;
     }
 
     .interest-card h3 {
-      font-size: 1.2rem;
-      color: #284a31;
-      margin-bottom: 12px;
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      color: #2c4034;
     }
 
     .interest-card p {
-      color: #626d64;
+      color: #5c6861;
+      font-size: 0.96rem;
     }
 
-    /* Education */
+    /* EDUCATION */
 
-    .education {
-      background: #ffffff;
-    }
-
-    .education-list {
-      margin-top: 35px;
-      max-width: 850px;
+    .education-grid {
       display: grid;
-      gap: 0;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
     }
 
     .education-item {
-      display: grid;
-      grid-template-columns: 90px 1fr;
-      gap: 25px;
-      padding: 22px 0;
-      border-bottom: 1px solid #dfe4dd;
+      border-top: 2px solid #55705f;
+      padding-top: 20px;
     }
 
-    .year {
-      color: #66806b;
-      font-weight: 700;
+    .education-year {
+      color: #6b776f;
+      font-size: 0.88rem;
+      margin-bottom: 8px;
     }
 
     .education-item h3 {
-      color: #284a31;
-      margin-bottom: 4px;
+      font-size: 1.15rem;
+      line-height: 1.35;
+      margin-bottom: 8px;
     }
 
     .education-item p {
-      color: #626d64;
+      color: #657068;
+      font-size: 0.94rem;
     }
 
-    /* Contact */
+    /* CONTACT */
 
-    .contact {
-      background: #eef3ec;
+    .contact-section {
+      background: #26342d;
+      color: #ffffff;
     }
 
-    .contact-links {
-      margin-top: 28px;
+    .contact-section h2 {
+      color: #ffffff;
+      margin-bottom: 18px;
+    }
+
+    .contact-text {
+      max-width: 650px;
+      color: #d9e0da;
+      margin-bottom: 30px;
+    }
+
+    .profile-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 22px;
+      margin-top: 24px;
     }
 
-    .contact-links a {
-      padding: 11px 18px;
-      border: 1px solid #9eaca0;
-      border-radius: 5px;
-      background: white;
-      color: #315b3b;
+    .profile-links a {
+      color: #ffffff;
+      border-bottom: 1px solid #91a696;
+      padding-bottom: 3px;
+      font-size: 0.94rem;
     }
 
-    .contact-links a:hover {
-      background: #315b3b;
-      color: white;
+    .location {
+      margin-top: 28px;
+      color: #bfcac1;
+      font-size: 0.92rem;
     }
 
-    /* Footer */
+    /* FOOTER */
 
     footer {
-      background: #1f3024;
-      color: #dce4dc;
-      padding: 28px 0;
+      background: #1d2922;
+      color: #aeb9b1;
       text-align: center;
-      font-size: 0.9rem;
+      padding: 22px;
+      font-size: 0.82rem;
     }
 
-    /* Mobile */
+    /* MOBILE */
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
 
-      .nav-container {
+      .hero-image {
+        height: 420px;
+      }
+
+      .photo-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .interest-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner {
         flex-direction: column;
-        gap: 14px;
+        gap: 15px;
+        align-items: flex-start;
       }
 
       .nav-links {
-        gap: 16px;
+        gap: 18px;
         flex-wrap: wrap;
-        justify-content: center;
       }
 
       .hero {
-        padding: 65px 0;
+        padding: 70px 0 55px;
       }
 
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
+      .hero h1 {
+        font-size: 3.2rem;
       }
 
       .hero-image {
         height: 320px;
       }
 
-      .interest-grid {
-        grid-template-columns: 1fr;
+      .photo-strip {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 45px;
       }
 
-      .education-item {
-        grid-template-columns: 70px 1fr;
-        gap: 15px;
-      }
-    }
-
-    @media (max-width: 500px) {
-
-      h1 {
-        font-size: 2.7rem;
+      .photo-strip img {
+        height: 170px;
       }
 
-      h2 {
-        font-size: 2rem;
+      .section {
+        padding: 65px 0;
+      }
+
+      .container {
+        padding: 0 20px;
       }
     }
   </style>
@@ -335,70 +364,93 @@
 
 <body>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
 
   <nav>
-    <div class="nav-container">
+    <div class="nav-inner">
 
-      <a href="index.html" class="logo">
+      <a href="index.html" class="site-name">
         Deva Raj Khanal
       </a>
 
       <div class="nav-links">
-
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="research.html">
-          Research &amp; Experience
-        </a>
-
-        <a href="field-lab.html">
-          Field &amp; Lab
-        </a>
-
+        <a href="index.html">Home</a>
+        <a href="research.html">Research &amp; Experience</a>
+        <a href="field-lab.html">Field &amp; Lab</a>
       </div>
 
     </div>
   </nav>
 
 
-  <!-- Hero -->
+  <!-- HERO -->
 
   <header class="hero">
 
-    <div class="container hero-grid">
+    <div class="container">
 
-      <div>
+      <div class="hero-grid">
 
-        <div class="eyebrow">
-          Plant Biology · Horticulture · Research
+        <div>
+
+          <h1>
+            Deva Raj Khanal
+          </h1>
+
+          <p class="hero-statement">
+            I study plant diversity, genetic resources, phenotypic traits, and climatic and environmental variation in cultivated plants.
+          </p>
+
+          <a href="research.html" class="button">
+            Explore My Research
+          </a>
+
         </div>
 
-        <h1>
-          Deva Raj Khanal
-        </h1>
+        <div>
 
-        <p class="hero-text">
-          I study plant diversity, genetic resources, phenotypic traits,
-          and crop adaptation in horticultural and specialty crops.
-        </p>
+          <img
+            class="hero-image"
+            src="mango_2.jpeg"
+            alt="Mango research"
+          >
 
-        <a class="button" href="research.html">
-          Explore My Research
-        </a>
+        </div>
 
       </div>
 
 
-      <div class="hero-image">
+      <!-- HOMEPAGE PHOTO STRIP -->
 
-        <!-- Temporary image. Replace with your own photo later. -->
+      <div class="photo-strip">
 
-        <img
-          src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=80"
-          alt="Green plant leaves">
+        <figure>
+          <img
+            src="field_work_stl_1.jpeg"
+            alt="Field work"
+          >
+        </figure>
+
+        <figure>
+          <img
+            src="mango_2.jpeg"
+            alt="Mango research"
+          >
+        </figure>
+
+        <figure>
+          <img
+            src="mobot_1.jpeg"
+            alt="Missouri Botanical Garden research"
+          >
+        </figure>
+
+        <figure>
+          <img
+            src="sdsu_lab_3.JPG"
+            alt="Laboratory research at South Dakota State University"
+          >
+        </figure>
 
       </div>
 
@@ -407,39 +459,9 @@
   </header>
 
 
-  <!-- About -->
+  <!-- RESEARCH INTERESTS -->
 
-  <section class="about">
-
-    <div class="container">
-
-      <div class="about-content">
-
-        <div class="section-label">
-          About
-        </div>
-
-        <h2>
-          Plant science with a background in horticulture.
-        </h2>
-
-        <p class="intro">
-          I am a plant scientist with training in horticulture and plant biology.
-          My research experience includes botanical collections, environmental
-          data, molecular approaches, plant phenotyping, and field-based
-          horticultural research.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Research Interests -->
-
-  <section class="interests">
+  <section class="section research-section">
 
     <div class="container">
 
@@ -453,9 +475,9 @@
 
       <div class="interest-grid">
 
-        <div class="interest-card">
+        <article class="interest-card">
 
-          <div class="number">
+          <div class="interest-number">
             01
           </div>
 
@@ -464,34 +486,32 @@
           </h3>
 
           <p>
-            Plant genetic resources, evolutionary relationships,
-            phylogenetics, and hybridization.
+            Plant genetic resources, evolutionary relationships, phylogenetics, classification, and hybridization.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="interest-card">
+        <article class="interest-card">
 
-          <div class="number">
+          <div class="interest-number">
             02
           </div>
 
           <h3>
-            Crop Environment &amp; Adaptation
+            Climate &amp; Environmental Variation
           </h3>
 
           <p>
-            Environmental variation and climatic conditions associated
-            with cultivated and introduced crops.
+            Climatic and environmental conditions associated with cultivated plants and their geographic distributions.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="interest-card">
+        <article class="interest-card">
 
-          <div class="number">
+          <div class="interest-number">
             03
           </div>
 
@@ -500,11 +520,10 @@
           </h3>
 
           <p>
-            Plant phenotyping, botanical collections, hyperspectral
-            approaches, and horticultural crop systems.
+            Plant phenotyping, botanical collections, plant traits, and horticultural crop systems.
           </p>
 
-        </div>
+        </article>
 
       </div>
 
@@ -513,9 +532,9 @@
   </section>
 
 
-  <!-- Education -->
+  <!-- EDUCATION -->
 
-  <section class="education">
+  <section class="section">
 
     <div class="container">
 
@@ -527,63 +546,57 @@
         Academic background
       </h2>
 
-      <div class="education-list">
+      <div class="education-grid">
 
-        <div class="education-item">
+        <article class="education-item">
 
-          <div class="year">
+          <div class="education-year">
             2026
           </div>
 
-          <div>
-            <h3>
-              M.S. Biology
-            </h3>
+          <h3>
+            M.S. Biology
+          </h3>
 
-            <p>
-              Saint Louis University
-            </p>
-          </div>
+          <p>
+            Saint Louis University
+          </p>
 
-        </div>
+        </article>
 
 
-        <div class="education-item">
+        <article class="education-item">
 
-          <div class="year">
+          <div class="education-year">
             2022
           </div>
 
-          <div>
-            <h3>
-              M.S. Biological Sciences
-            </h3>
+          <h3>
+            M.S. Biological Sciences
+          </h3>
 
-            <p>
-              South Dakota State University
-            </p>
-          </div>
+          <p>
+            South Dakota State University
+          </p>
 
-        </div>
+        </article>
 
 
-        <div class="education-item">
+        <article class="education-item">
 
-          <div class="year">
+          <div class="education-year">
             2017
           </div>
 
-          <div>
-            <h3>
-              B.S. Horticulture
-            </h3>
+          <h3>
+            B.S. Horticulture
+          </h3>
 
-            <p>
-              Tribhuvan University, Nepal
-            </p>
-          </div>
+          <p>
+            Tribhuvan University, Nepal
+          </p>
 
-        </div>
+        </article>
 
       </div>
 
@@ -592,9 +605,9 @@
   </section>
 
 
-  <!-- Contact -->
+  <!-- CONTACT / PROFILES -->
 
-  <section class="contact">
+  <section class="section contact-section">
 
     <div class="container">
 
@@ -606,14 +619,12 @@
         Get in touch
       </h2>
 
-      <p class="intro">
-        I am interested in research opportunities, collaborations,
-        and work involving horticultural and specialty crops.
+      <p class="contact-text">
+        I am interested in research opportunities, collaborations, and work involving horticultural and specialty crops.
       </p>
 
-      <div class="contact-links">
 
-        <!-- Replace with your actual email when ready -->
+      <div class="profile-links">
 
         <a href="mailto:YOUR-EMAIL@example.com">
           Email
@@ -622,14 +633,32 @@
         <a
           href="https://scholar.google.com/citations?hl=en&user=1NtizgcAAAAJ&view_op=list_works"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Google Scholar
         </a>
 
-        <a href="#">
-          St. Louis, Missouri
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ORCID
         </a>
 
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bluesky
+        </a>
+
+      </div>
+
+
+      <div class="location">
+        St. Louis, Missouri
       </div>
 
     </div>
@@ -637,16 +666,11 @@
   </section>
 
 
-  <!-- Footer -->
+  <!-- FOOTER -->
 
   <footer>
-
-    <div class="container">
-      © 2026 Deva Raj Khanal @Karkataceae
-    </div>
-
+    © 2026 Deva Raj Khanal @Karkataceae
   </footer>
-
 
 </body>
 </html>
