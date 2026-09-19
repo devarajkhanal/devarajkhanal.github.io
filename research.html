@@ -1,12 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Research | Deva Raj Khanal</title>
+  <title>Research & Experience | Deva Raj Khanal</title>
 
-  <meta name="description" content="Research interests and experience of Deva Raj Khanal in plant biology, horticulture, plant genetic resources, phenotyping, environmental adaptation, and plant diversity.">
+  <meta name="description" content="Research and experience of Deva Raj Khanal in plant diversity, genetic resources, environmental variation, horticultural crops, phenotyping, and plant evolutionary biology.">
 
   <style>
     * {
@@ -73,10 +74,10 @@
       color: #315b3b;
     }
 
-    /* Page Header */
+    /* Header */
 
     .page-header {
-      padding: 90px 0 80px;
+      padding: 80px 0 70px;
       background: #eef3ec;
     }
 
@@ -90,136 +91,238 @@
     }
 
     h1 {
-      font-size: clamp(2.8rem, 6vw, 4.8rem);
-      line-height: 1.05;
+      font-size: clamp(2.6rem, 5vw, 4.4rem);
+      line-height: 1.08;
       color: #1f3024;
-      max-width: 900px;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
     }
 
-    .page-intro {
-      font-size: 1.2rem;
-      color: #536056;
+    .header-text {
       max-width: 800px;
+      font-size: 1.15rem;
+      color: #536056;
     }
 
-    /* Research Sections */
+    /* General sections */
 
     section {
-      padding: 85px 0;
+      padding: 75px 0;
     }
 
-    .research-section:nth-child(even) {
-      background: #ffffff;
-    }
-
-    .research-grid {
-      display: grid;
-      grid-template-columns: 0.32fr 1fr;
-      gap: 70px;
-      align-items: start;
-    }
-
-    .research-number {
-      font-size: 0.85rem;
-      color: #728074;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      margin-bottom: 12px;
-    }
-
-    .research-label {
+    .section-label {
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.13em;
       font-size: 0.75rem;
       color: #66806b;
       font-weight: 700;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     h2 {
-      font-size: 2.4rem;
+      font-size: 2.25rem;
       line-height: 1.2;
       color: #1f3024;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
-    .focus {
-      color: #657268;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    .research-content p {
-      color: #59645b;
-      margin-bottom: 18px;
-      font-size: 1.05rem;
-    }
-
-    .research-content ul {
-      margin: 25px 0 0 20px;
-      color: #59645b;
-    }
-
-    .research-content li {
-      margin-bottom: 8px;
-      padding-left: 5px;
-    }
-
-    /* Highlight Box */
-
-    .highlight {
-      margin-top: 30px;
-      padding: 28px 30px;
-      background: #f1f4ef;
-      border-left: 4px solid #58735d;
-      border-radius: 5px;
-    }
-
-    .highlight h3 {
-      color: #284a31;
-      font-size: 1.15rem;
-      margin-bottom: 10px;
-    }
-
-    .highlight p {
-      margin-bottom: 0;
-      font-size: 1rem;
-    }
-
-    /* Closing Section */
-
-    .closing {
-      background: #eef3ec;
-      text-align: center;
-    }
-
-    .closing-content {
+    .intro {
       max-width: 800px;
-      margin: 0 auto;
+      font-size: 1.05rem;
+      color: #58635a;
     }
 
-    .closing h2 {
-      margin-bottom: 20px;
+    /* Research areas */
+
+    .research-areas {
+      background: #ffffff;
     }
 
-    .closing p {
+    .area-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .area-card {
+      padding: 30px;
+      border: 1px solid #dfe5dd;
+      border-radius: 8px;
+      background: #fafbf9;
+    }
+
+    .number {
+      font-size: 0.8rem;
+      color: #7b897d;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .area-card h3 {
+      color: #284a31;
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .area-card p {
+      color: #626d64;
+    }
+
+    /* Research projects */
+
+    .projects {
+      background: #f1f4ef;
+    }
+
+    .project-list {
+      margin-top: 40px;
+      display: grid;
+      gap: 28px;
+    }
+
+    .project {
+      background: #ffffff;
+      border: 1px solid #dfe5dd;
+      border-radius: 8px;
+      padding: 34px;
+    }
+
+    .project h3 {
+      font-size: 1.45rem;
+      color: #284a31;
+      margin-bottom: 5px;
+    }
+
+    .species {
+      color: #728074;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
+    .project p {
       color: #59645b;
-      font-size: 1.08rem;
-      margin-bottom: 25px;
+      margin-bottom: 14px;
     }
 
-    .button {
-      display: inline-block;
-      padding: 12px 22px;
-      border-radius: 5px;
-      background: #315b3b;
-      color: white;
+    /* Experience */
+
+    .experience {
+      background: #ffffff;
+    }
+
+    .experience-list {
+      margin-top: 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    .experience-item {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #dfe4dd;
+    }
+
+    .experience-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .experience-item h3 {
+      color: #284a31;
+      font-size: 1.35rem;
+      margin-bottom: 4px;
+    }
+
+    .role {
+      color: #728074;
+      margin-bottom: 15px;
+    }
+
+    .experience-item p {
+      max-width: 850px;
+      color: #59645b;
+    }
+
+    /* Methods and skills */
+
+    .methods {
+      background: #f7f8f5;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px 50px;
+      margin-top: 35px;
+      max-width: 900px;
+    }
+
+    .method-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #dfe4dd;
+    }
+
+    .method-item h3 {
+      font-size: 1.05rem;
+      color: #284a31;
+      margin-bottom: 5px;
+    }
+
+    .method-item p {
+      color: #626d64;
+      font-size: 0.98rem;
+    }
+
+    /* Publications */
+
+    .publications {
+      background: #ffffff;
+    }
+
+    .publication-list {
+      margin-top: 40px;
+      display: grid;
+      gap: 22px;
+    }
+
+    .publication {
+      padding: 25px 0;
+      border-bottom: 1px solid #dfe4dd;
+    }
+
+    .publication:last-child {
+      border-bottom: none;
+    }
+
+    .publication h3 {
+      font-size: 1.12rem;
+      line-height: 1.45;
+      color: #284a31;
+      margin-bottom: 8px;
+    }
+
+    .publication p {
+      color: #626d64;
+      font-size: 0.96rem;
+    }
+
+    .publication a {
+      color: #315b3b;
       font-weight: 600;
     }
 
-    .button:hover {
-      background: #25482d;
+    .publication a:hover {
+      text-decoration: underline;
+    }
+
+    .scholar-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #315b3b;
+      font-weight: 700;
+    }
+
+    .scholar-link:hover {
+      text-decoration: underline;
     }
 
     /* Footer */
@@ -251,17 +354,12 @@
         padding: 65px 0;
       }
 
-      .research-grid {
+      .area-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
       }
 
-      h1 {
-        font-size: 3rem;
-      }
-
-      h2 {
-        font-size: 2rem;
+      .method-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -271,594 +369,9 @@
         font-size: 2.6rem;
       }
 
-      section {
-        padding: 65px 0;
+      h2 {
+        font-size: 2rem;
       }
-    }
-  </style>
-</head>
-
-<body>
-
-
-  <!-- Navigation -->
-
-<nav>
-
-  <div class="nav-container">
-
-    <a href="index.html" class="logo">
-      Deva Raj Khanal
-    </a>
-
-    <div class="nav-links">
-
-      <a href="index.html">
-        Home
-      </a>
-
-      <a href="research.html">
-        Research &amp; Experience
-      </a>
-
-      <a href="field-lab.html">
-        Field &amp; Lab
-      </a>
-
-    </div>
-
-  </div>
-
-</nav>
-
-  <!-- Page Header -->
-
-  <header class="page-header">
-
-    <div class="container">
-
-      <div class="eyebrow">
-        Research
-      </div>
-
-      <h1>
-        Plants, diversity, and environmental adaptation
-      </h1>
-
-      <p class="page-intro">
-        My research interests center on plant genetic resources, genetic and
-        phenotypic diversity, environmental adaptation, and horticultural and
-        specialty crop improvement.
-      </p>
-
-    </div>
-
-  </header>
-
-
-  <!-- Research Area 1 -->
-
-  <section class="research-section">
-
-    <div class="container research-grid">
-
-      <div>
-
-        <div class="research-number">
-          01
-        </div>
-
-        <div class="research-label">
-          Research Area
-        </div>
-
-        <h2>
-          Horticulture & Plant Phenotyping
-        </h2>
-
-        <p class="focus">
-          Plant traits · Hyperspectral phenotyping · Botanical collections ·
-          Field research
-        </p>
-
-      </div>
-
-
-      <div class="research-content">
-
-        <p>
-          My background in horticulture provides the foundation for my interest
-          in how plants grow, respond to their environments, and express
-          measurable traits. My research experience includes plant trait
-          characterization, hyperspectral leaf scanning, botanical collections,
-          herbarium research, and field-based work with perennial and
-          horticultural crops.
-        </p>
-
-        <p>
-          I am interested in using plant phenotypes and observations to better
-          understand differences among plant materials and their relationships
-          with growing environments. This includes both field-based observations
-          and laboratory approaches that provide information about plant traits.
-        </p>
-
-        <p>
-          My experience with botanical and herbarium collections has also given
-          me an appreciation for the value of plant specimens and associated
-          geographic information as resources for understanding plant diversity
-          and environmental relationships.
-        </p>
-
-
-        <div class="highlight">
-
-          <h3>
-            Research experience
-          </h3>
-
-          <p>
-            Plant trait characterization, hyperspectral leaf scanning,
-            plant and herbarium specimen handling, botanical collection
-            research, field-based horticultural research, perennial crop
-            systems, and plant observation and documentation.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Research Area 2 -->
-
-  <section class="research-section">
-
-    <div class="container research-grid">
-
-      <div>
-
-        <div class="research-number">
-          02
-        </div>
-
-        <div class="research-label">
-          Research Area
-        </div>
-
-        <h2>
-          Crop Environment & Adaptation
-        </h2>
-
-        <p class="focus">
-          Cultivated mango · Climate · Environmental variation ·
-          Geographic adaptation
-        </p>
-
-      </div>
-
-
-      <div class="research-content">
-
-        <p>
-          My graduate research at Saint Louis University and the Missouri
-          Botanical Garden focused on the climatic environment of cultivated
-          mango (<i>Mangifera indica</i> L.). I examined environmental
-          conditions associated with cultivated mango across its region of
-          domestication and introduced and cultivated regions.
-        </p>
-
-        <p>
-          This work involved examining geographic and environmental variation,
-          including temperature and precipitation patterns, to better understand
-          the climatic conditions associated with cultivated mango.
-        </p>
-
-        <p>
-          The project also incorporated extensive literature concerning mango
-          cultivation, domestication, introduction history, geographic origins,
-          and diversity in South and Southeast Asia.
-        </p>
-
-
-        <div class="highlight">
-
-          <h3>
-            Research focus
-          </h3>
-
-          <p>
-            Understanding relationships among cultivated crops, geographic
-            distributions, climatic conditions, and environmental variation.
-          </p>
-
-        </div>
-
-
-        <ul>
-
-          <li>
-            Climatic niche characterization
-          </li>
-
-          <li>
-            Temperature and precipitation patterns
-          </li>
-
-          <li>
-            Environmental variation
-          </li>
-
-          <li>
-            Cultivated mango
-          </li>
-
-          <li>
-            Domestication and cultivation history
-          </li>
-
-          <li>
-            Introduction and geographic distribution
-          </li>
-
-          <li>
-            Mango diversity in South and Southeast Asia
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Research Area 3 -->
-
-  <section class="research-section">
-
-    <div class="container research-grid">
-
-      <div>
-
-        <div class="research-number">
-          03
-        </div>
-
-        <div class="research-label">
-          Research Area
-        </div>
-
-        <h2>
-          Plant Diversity, Genetics & Evolution
-        </h2>
-
-        <p class="focus">
-          Plant genetic resources · Phylogenetics · Evolution ·
-          Molecular research
-        </p>
-
-      </div>
-
-
-      <div class="research-content">
-
-        <p>
-          At South Dakota State University, my research focused on plant
-          diversity and evolutionary relationships within the Russian thistle
-          group (<i>Salsola</i> spp.). This work involved phylogenetic
-          relationships, classification, species identification, and
-          understanding evolutionary patterns within a complex group of plants.
-        </p>
-
-        <p>
-          My molecular research experience includes plant specimen organization,
-          voucher records, molecular records and inventories, DNA-related
-          laboratory work, and target-capture sequencing approaches.
-        </p>
-
-        <p>
-          I also have experience with Russian thistle identification and
-          management, as well as contribution to DNA laboratory work associated
-          with an ongoing mango phylogeny project.
-        </p>
-
-
-        <div class="highlight">
-
-          <h3>
-            Research experience
-          </h3>
-
-          <p>
-            Phylogenetic research, plant diversity and evolution, species
-            identification and classification, plant voucher records,
-            molecular records and inventories, target-capture sequencing
-            approaches, and DNA laboratory work.
-          </p>
-
-        </div>
-
-
-        <ul>
-
-          <li>
-            <i>Salsola</i> phylogenetic research
-          </li>
-
-          <li>
-            Plant diversity and evolution
-          </li>
-
-          <li>
-            Species identification and classification
-          </li>
-
-          <li>
-            Plant voucher records
-          </li>
-
-          <li>
-            Molecular records and inventories
-          </li>
-
-          <li>
-            Target-capture sequencing approaches
-          </li>
-
-          <li>
-            DNA laboratory work
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Research Direction -->
-
-  <section class="closing">
-
-    <div class="container closing-content">
-
-      <div class="eyebrow">
-        Research Direction
-      </div>
-
-      <h2>
-        Connecting diversity with environment
-      </h2>
-
-      <p>
-        My broader research interests are centered on understanding how genetic
-        and phenotypic diversity in horticultural and specialty crops interacts
-        with environmental variation. I am interested in research that can
-        contribute to crop adaptation, improvement, resilience, and sustainable
-        production.
-      </p>
-
-      <a class="button" href="index.html">
-        Back to Home
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- Footer -->
-
-  <footer>
-
-    <div class="container">
-
-      © 2026 Deva Raj Khanal · Plant Biology & Horticulture
-
-    </div>
-
-  </footer>
-
-
-</body>
-</html>    }
-
-    /* Navigation */
-
-    nav {
-      background: #ffffff;
-      border-bottom: 1px solid #e1e7e2;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .nav-inner {
-      max-width: 1120px;
-      width: 92%;
-      margin: auto;
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .site-name {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #244c37;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      font-size: 0.92rem;
-      color: #526259;
-    }
-
-    .nav-links a:hover {
-      color: #244c37;
-    }
-
-    /* Page header */
-
-    .page-header {
-      padding: 90px 0 75px;
-      background: linear-gradient(135deg, #eef4ef, #f8f8f5);
-    }
-
-    .eyebrow {
-      color: #567a63;
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: clamp(2.7rem, 6vw, 4.5rem);
-      line-height: 1.05;
-      color: #20382a;
-      margin-bottom: 25px;
-    }
-
-    .intro {
-      max-width: 800px;
-      font-size: 1.15rem;
-      color: #56635b;
-    }
-
-    /* Research sections */
-
-    section {
-      padding: 80px 0;
-    }
-
-    .research-section:nth-child(even) {
-      background: #ffffff;
-    }
-
-    .section-number {
-      color: #6d8d76;
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #294a35;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-      margin-bottom: 15px;
-    }
-
-    .focus-line {
-      color: #6a796f;
-      font-size: 1rem;
-      margin-bottom: 30px;
-    }
-
-    .research-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 60px;
-      align-items: start;
-    }
-
-    .research-text p {
-      color: #56625b;
-      margin-bottom: 18px;
-    }
-
-    .research-text strong {
-      color: #294a35;
-    }
-
-    .research-box {
-      background: #f0f4f0;
-      border-radius: 10px;
-      padding: 30px;
-    }
-
-    .research-box h3 {
-      color: #294a35;
-      margin-bottom: 15px;
-      font-size: 1.15rem;
-    }
-
-    .research-box ul {
-      padding-left: 20px;
-      color: #59665e;
-    }
-
-    .research-box li {
-      margin-bottom: 9px;
-    }
-
-    /* Closing */
-
-    .closing {
-      background: #294a35;
-      color: white;
-      text-align: center;
-    }
-
-    .closing h2 {
-      color: white;
-    }
-
-    .closing p {
-      max-width: 760px;
-      margin: auto;
-      color: #dce8df;
-    }
-
-    /* Footer */
-
-    footer {
-      background: #1d3024;
-      color: #bdcabe;
-      text-align: center;
-      padding: 25px 15px;
-      font-size: 0.85rem;
-    }
-
-    /* Mobile */
-
-    @media (max-width: 800px) {
-
-      .nav-inner {
-        flex-direction: column;
-        padding: 18px 0;
-      }
-
-      .nav-links {
-        justify-content: center;
-        gap: 14px;
-      }
-
-      .page-header {
-        padding: 65px 0;
-      }
-
-      .research-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
     }
   </style>
 </head>
@@ -868,42 +381,50 @@
   <!-- Navigation -->
 
   <nav>
-    <div class="nav-inner">
+    <div class="nav-container">
 
-      <div class="site-name">
+      <a href="index.html" class="logo">
         Deva Raj Khanal
-      </div>
+      </a>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="index.html#education">Education</a>
-        <a href="index.html#photos">Field & Lab</a>
-        <a href="index.html#contact">Contact</a>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="research.html">
+          Research &amp; Experience
+        </a>
+
+        <a href="field-lab.html">
+          Field &amp; Lab
+        </a>
+
       </div>
 
     </div>
   </nav>
 
 
-  <!-- Page Header -->
+  <!-- Header -->
 
   <header class="page-header">
 
     <div class="container">
 
       <div class="eyebrow">
-        Research
+        Research &amp; Experience
       </div>
 
       <h1>
-        Plants, diversity, and environmental adaptation
+        Plant diversity, environmental variation, and horticultural research
       </h1>
 
-      <p class="intro">
-        My research interests center on plant genetic resources, genetic and
-        phenotypic diversity, environmental adaptation, and horticultural and
-        specialty crop improvement.
+      <p class="header-text">
+        My research experience spans plant diversity and evolution,
+        environmental variation, botanical collections, plant phenotyping,
+        molecular approaches, and horticultural crops.
       </p>
 
     </div>
@@ -911,63 +432,72 @@
   </header>
 
 
-  <!-- Research Area 1 -->
+  <!-- Research Areas -->
 
-  <section class="research-section">
+  <section class="research-areas">
 
     <div class="container">
 
-      <div class="section-number">
-        01
+      <div class="section-label">
+        Research Areas
       </div>
 
       <h2>
-        Horticulture & Plant Phenotyping
+        Areas of research
       </h2>
 
-      <div class="focus-line">
-        Plant traits · Hyperspectral phenotyping · Botanical collections · Field research
-      </div>
+      <div class="area-grid">
 
-      <div class="research-grid">
+        <div class="area-card">
 
-        <div class="research-text">
+          <div class="number">
+            01
+          </div>
 
-          <p>
-            My background in horticulture provides the foundation for my interest
-            in understanding plant traits, plant performance, and the relationship
-            between plants and their growing environments.
-          </p>
+          <h3>
+            Plant Diversity &amp; Evolution
+          </h3>
 
           <p>
-            My research experience includes <strong>plant trait characterization,
-            hyperspectral leaf scanning, herbarium and botanical collections,
-            and field-based work with perennial and horticultural crops.</strong>
-          </p>
-
-          <p>
-            I am particularly interested in approaches that connect observable
-            plant traits with environmental variation and plant genetic resources.
-            These approaches can help characterize diversity and support the
-            evaluation and improvement of horticultural and specialty crops.
+            Plant genetic resources, phylogenetic relationships,
+            classification, identification, and hybridization.
           </p>
 
         </div>
 
 
-        <div class="research-box">
+        <div class="area-card">
 
-          <h3>Research experience</h3>
+          <div class="number">
+            02
+          </div>
 
-          <ul>
-            <li>Plant trait characterization</li>
-            <li>Hyperspectral leaf scanning</li>
-            <li>Plant and herbarium specimen handling</li>
-            <li>Botanical collection research</li>
-            <li>Field-based horticultural research</li>
-            <li>Perennial crop systems</li>
-            <li>Plant observation and documentation</li>
-          </ul>
+          <h3>
+            Crop Environment &amp; Adaptation
+          </h3>
+
+          <p>
+            Environmental variation and climatic conditions associated
+            with cultivated and introduced crops.
+          </p>
+
+        </div>
+
+
+        <div class="area-card">
+
+          <div class="number">
+            03
+          </div>
+
+          <h3>
+            Horticultural Crops &amp; Plant Traits
+          </h3>
+
+          <p>
+            Plant trait data, hyperspectral leaf scanning, botanical
+            collections, and field-based horticultural research.
+          </p>
 
         </div>
 
@@ -978,69 +508,240 @@
   </section>
 
 
-  <!-- Research Area 2 -->
+  <!-- Research Projects -->
 
-  <section class="research-section">
+  <section class="projects">
 
     <div class="container">
 
-      <div class="section-number">
-        02
+      <div class="section-label">
+        Research Projects
       </div>
 
       <h2>
-        Crop Environment & Adaptation
+        Graduate research
       </h2>
 
-      <div class="focus-line">
-        Cultivated mango · Climate · Environmental variation · Geographic adaptation
-      </div>
+      <div class="project-list">
 
-      <div class="research-grid">
 
-        <div class="research-text">
+        <article class="project">
+
+          <h3>
+            Climatic Patterns of Cultivated Mango
+          </h3>
+
+          <div class="species">
+            <i>Mangifera indica</i> L.
+          </div>
 
           <p>
             My graduate research at Saint Louis University and the Missouri
-            Botanical Garden focused on the climatic environment of cultivated
-            mango (<i>Mangifera indica</i> L.).
+            Botanical Garden examined climatic conditions associated with
+            cultivated mango records across its region of domestication
+            and introduced regions.
           </p>
 
           <p>
-            I examined environmental patterns associated with cultivated mango
-            by comparing climatic conditions across its region of domestication
-            and regions where mango has been introduced and cultivated.
+            The work used georeferenced botanical records together with
+            environmental data to characterize climatic conditions
+            associated with cultivated mango.
+          </p>
+
+        </article>
+
+
+        <article class="project">
+
+          <h3>
+            Russian Thistle Diversity &amp; Evolution
+          </h3>
+
+          <div class="species">
+            <i>Salsola</i> spp.
+          </div>
+
+          <p>
+            At South Dakota State University, my graduate research examined
+            phylogenetic relationships, classification, and identification
+            within the Russian thistle group.
           </p>
 
           <p>
-            This work considers how <strong>temperature and precipitation patterns
-            vary across mango-growing regions</strong> and how these environmental
-            differences relate to the distribution and cultivation of this
-            important perennial crop.
+            The research included molecular and phylogenetic approaches
+            to investigate relationships and hybridization within the group.
           </p>
 
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Research Experience -->
+
+  <section class="experience">
+
+    <div class="container">
+
+      <div class="section-label">
+        Experience
+      </div>
+
+      <h2>
+        Research experience
+      </h2>
+
+      <div class="experience-list">
+
+
+        <article class="experience-item">
+
+          <h3>
+            Saint Louis University &amp; Missouri Botanical Garden
+          </h3>
+
+          <div class="role">
+            Graduate Research Assistant · 2022–2026
+          </div>
+
           <p>
-            My research also draws on extensive literature concerning mango
-            cultivation, domestication, introduction history, geographic origins,
-            and diversity across South and Southeast Asia.
+            Research on cultivated mango using georeferenced botanical
+            records and environmental data. Experience included herbarium
+            specimen handling, destructive sampling, labeling, filing,
+            metadata management, plant specimen organization, DNA extraction
+            and quality assessment, hyperspectral leaf scanning, plant trait
+            data, and field work with perennial crops.
+          </p>
+
+        </article>
+
+
+        <article class="experience-item">
+
+          <h3>
+            South Dakota State University
+          </h3>
+
+          <div class="role">
+            Graduate Research &amp; Teaching Assistant · 2019–2022
+          </div>
+
+          <p>
+            Research on the Russian thistle group, including plant
+            identification, specimen and voucher organization, molecular
+            records, phylogenetic research, hybridization, and target-capture
+            sequencing. Also contributed to educational materials on Russian
+            thistle classification, identification, and management.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Research Methods -->
+
+  <section class="methods">
+
+    <div class="container">
+
+      <div class="section-label">
+        Research Methods &amp; Experience
+      </div>
+
+      <h2>
+        Selected methods and practical experience
+      </h2>
+
+      <div class="method-grid">
+
+        <div class="method-item">
+
+          <h3>
+            Botanical Collections
+          </h3>
+
+          <p>
+            Herbarium specimen handling, destructive sampling, labeling,
+            metadata, filing, and specimen organization.
           </p>
 
         </div>
 
 
-        <div class="research-box">
+        <div class="method-item">
 
-          <h3><i>Mangifera indica</i> research</h3>
+          <h3>
+            Environmental Data
+          </h3>
 
-          <ul>
-            <li>Climatic niche characterization</li>
-            <li>Temperature and precipitation patterns</li>
-            <li>Environmental variation</li>
-            <li>Cultivated mango</li>
-            <li>Domestication and cultivation history</li>
-            <li>Introduction and geographic distribution</li>
-            <li>South and Southeast Asian diversity</li>
-          </ul>
+          <p>
+            Use of georeferenced plant records and environmental datasets
+            in research on cultivated crops.
+          </p>
+
+        </div>
+
+
+        <div class="method-item">
+
+          <h3>
+            Molecular Research
+          </h3>
+
+          <p>
+            Plant DNA extraction, DNA quality assessment, sample organization,
+            molecular records, and target-capture sequencing research.
+          </p>
+
+        </div>
+
+
+        <div class="method-item">
+
+          <h3>
+            Plant Phenotyping
+          </h3>
+
+          <p>
+            Hyperspectral leaf scanning and collection of plant trait data.
+          </p>
+
+        </div>
+
+
+        <div class="method-item">
+
+          <h3>
+            Horticultural Field Work
+          </h3>
+
+          <p>
+            Planting, crop care, weeding, harvesting, and field support
+            involving perennial and horticultural crops.
+          </p>
+
+        </div>
+
+
+        <div class="method-item">
+
+          <h3>
+            Phylogenetic Research
+          </h3>
+
+          <p>
+            Research involving phylogenetic relationships, plant diversity,
+            classification, and hybridization.
+          </p>
 
         </div>
 
@@ -1051,97 +752,179 @@
   </section>
 
 
-  <!-- Research Area 3 -->
+  <!-- Publications -->
 
-  <section class="research-section">
-
-    <div class="container">
-
-      <div class="section-number">
-        03
-      </div>
-
-      <h2>
-        Plant Diversity, Genetics & Evolution
-      </h2>
-
-      <div class="focus-line">
-        Plant genetic resources · Phylogenetics · Evolution · Molecular research
-      </div>
-
-      <div class="research-grid">
-
-        <div class="research-text">
-
-          <p>
-            My earlier graduate research at South Dakota State University
-            focused on plant diversity and evolutionary relationships within
-            the Russian thistle group (<i>Salsola</i> spp.).
-          </p>
-
-          <p>
-            The work involved examining <strong>phylogenetic relationships,
-            classification, and identification</strong> within a taxonomically
-            complex group of plants.
-          </p>
-
-          <p>
-            I worked with plant specimens, voucher records, molecular records,
-            and target-capture sequencing approaches as part of the research.
-          </p>
-
-          <p>
-            My broader experience also includes Russian thistle identification
-            and management, as well as contribution to DNA laboratory work for
-            an ongoing mango phylogeny project.
-          </p>
-
-        </div>
-
-
-        <div class="research-box">
-
-          <h3>Research experience</h3>
-
-          <ul>
-            <li><i>Salsola</i> phylogenetic research</li>
-            <li>Plant diversity and evolution</li>
-            <li>Species identification and classification</li>
-            <li>Plant voucher records</li>
-            <li>Molecular records and inventories</li>
-            <li>Target-capture sequencing approaches</li>
-            <li>DNA laboratory work</li>
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Research direction -->
-
-  <section class="closing">
+  <section class="publications">
 
     <div class="container">
 
-      <div class="section-number">
-        Research direction
+      <div class="section-label">
+        Publications &amp; Research Outputs
       </div>
 
       <h2>
-        Connecting diversity with environment
+        Selected publications
       </h2>
 
-      <p>
-        Across these research areas, I am interested in how plant genetic and
-        phenotypic diversity interacts with environmental variation, and how
-        this knowledge can contribute to the understanding, evaluation, and
-        improvement of horticultural and specialty crops.
-      </p>
+      <div class="publication-list">
+
+
+        <article class="publication">
+
+          <h3>
+            Coffee production and pest control in pocket areas of Nepal,
+            a brief review
+          </h3>
+
+          <p>
+            Tuladhar, A., &amp; Khanal, D. R. · 2024
+          </p>
+
+          <p>
+            <i>III International Symposium on Beverage Crops</i>,
+            Acta Horticulturae 1387, 277–282.
+          </p>
+
+          <p>
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1NtizgcAAAAJ&sortby=pubdate&citation_for_view=1NtizgcAAAAJ:IjCSPb-OGe4C"
+              target="_blank"
+              rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </p>
+
+        </article>
+
+
+        <article class="publication">
+
+          <h3>
+            Disentangling the Complex Evolutionary History of Invasive
+            Russian Thistle: Phylogenetic Relationships, the Role of
+            Hybridization, and Public Engagement
+          </h3>
+
+          <p>
+            Khanal, D. R. · South Dakota State University · 2023
+          </p>
+
+          <p>
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1NtizgcAAAAJ&sortby=pubdate&citation_for_view=1NtizgcAAAAJ:9yKSN-GCB0IC"
+              target="_blank"
+              rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </p>
+
+        </article>
+
+
+        <article class="publication">
+
+          <h3>
+            Prickly Russian Thistle: Classification and Related Species
+            in South Dakota and the United States
+          </h3>
+
+          <p>
+            Khanal, D. R., Ehlert, K., &amp; Latvis, M. · 2022
+          </p>
+
+          <p>
+            South Dakota State University Extension, P-00238.
+          </p>
+
+          <p>
+            <a
+              href="https://extension.sdstate.edu/sites/default/files/2022-05/P-00238.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
+              Extension publication
+            </a>
+            &nbsp;·&nbsp;
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1NtizgcAAAAJ&sortby=pubdate&citation_for_view=1NtizgcAAAAJ:qjMakFHDy7sC"
+              target="_blank"
+              rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </p>
+
+        </article>
+
+
+        <article class="publication">
+
+          <h3>
+            Prickly Russian Thistle: History, Identification, Challenges
+            and Management Strategies
+          </h3>
+
+          <p>
+            Khanal, D. R., Ehlert, K., &amp; Latvis, M. · 2022
+          </p>
+
+          <p>
+            South Dakota State University Extension, P-00237.
+          </p>
+
+          <p>
+            <a
+              href="https://extension.sdstate.edu/sites/default/files/2022-05/P-00237.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
+              Extension publication
+            </a>
+            &nbsp;·&nbsp;
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1NtizgcAAAAJ&sortby=pubdate&citation_for_view=1NtizgcAAAAJ:2osOgNQ5qMEC"
+              target="_blank"
+              rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </p>
+
+        </article>
+
+
+        <article class="publication">
+
+          <h3>
+            Coffee production in Nepal: A brief review
+          </h3>
+
+          <p>
+            Tuladhar, A., &amp; Khanal, D. R. · 2018
+          </p>
+
+          <p>
+            <i>II International Symposium on Beverage Crops</i> 1274,
+            161–166.
+          </p>
+
+          <p>
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1NtizgcAAAAJ&sortby=pubdate&citation_for_view=1NtizgcAAAAJ:u5HHmVD_uO8C"
+              target="_blank"
+              rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <a
+        class="scholar-link"
+        href="https://scholar.google.com/citations?hl=en&user=1NtizgcAAAAJ&view_op=list_works"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Google Scholar profile →
+      </a>
 
     </div>
 
@@ -1151,8 +934,13 @@
   <!-- Footer -->
 
   <footer>
+
+    <div class="container">
       © 2026 Deva Raj Khanal @Karkataceae
+    </div>
+
   </footer>
 
 </body>
 </html>
+```
