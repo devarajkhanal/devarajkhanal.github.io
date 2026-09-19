@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,15 +113,6 @@
       align-items: center;
     }
 
-    .hero h1 {
-      font-size: clamp(3.2rem, 7vw, 6.2rem);
-      line-height: 0.98;
-      letter-spacing: -0.045em;
-      font-weight: 600;
-      color: #26342d;
-      margin-bottom: 30px;
-    }
-
     .hero-statement {
       max-width: 650px;
       font-size: clamp(1.25rem, 2vw, 1.65rem);
@@ -178,7 +168,7 @@
       transform: scale(1.03);
     }
 
-    /* RESEARCH INTERESTS */
+    /* RESEARCH */
 
     .research-section {
       background: #eef2ed;
@@ -254,6 +244,10 @@
       color: #ffffff;
     }
 
+    .contact-section .section-label {
+      color: #bfcac1;
+    }
+
     .contact-section h2 {
       color: #ffffff;
       margin-bottom: 18px;
@@ -298,6 +292,7 @@
     /* MOBILE */
 
     @media (max-width: 900px) {
+
       .hero-grid {
         grid-template-columns: 1fr;
         gap: 45px;
@@ -318,6 +313,7 @@
     }
 
     @media (max-width: 600px) {
+
       .nav-inner {
         flex-direction: column;
         gap: 15px;
@@ -331,10 +327,6 @@
 
       .hero {
         padding: 70px 0 55px;
-      }
-
-      .hero h1 {
-        font-size: 3.2rem;
       }
 
       .hero-image {
@@ -455,11 +447,15 @@
   </header>
 
 
-  <!--  -->
+  <!-- RESEARCH -->
 
-    <h2>
-      Areas of Research
-    </h2>
+  <section class="section research-section">
+
+    <div class="container">
+
+      <h2>
+        Areas of Research
+      </h2>
 
       <div class="interest-grid">
 
@@ -611,7 +607,6 @@
         I am interested in research opportunities, collaborations, and work involving horticultural and specialty crops.
       </p>
 
-
       <div class="profile-links">
 
         <a href="mailto:YOUR-EMAIL@example.com">
@@ -644,7 +639,6 @@
 
       </div>
 
-
       <div class="location">
         St. Louis, Missouri
       </div>
@@ -662,4 +656,3 @@
 
 </body>
 </html>
-```
