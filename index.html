@@ -20,8 +20,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #26342d;
-      background: #f7f8f5;
+      color: #303030;
+      background: #f7f7f5;
       line-height: 1.65;
     }
 
@@ -39,7 +39,7 @@
 
     nav {
       width: 100%;
-      border-bottom: 1px solid #dfe4df;
+      border-bottom: 1px solid #ddddda;
       background: #ffffff;
     }
 
@@ -56,6 +56,7 @@
       font-weight: 800;
       font-size: 1.3rem;
       letter-spacing: 0.02em;
+      color: #222222;
     }
 
     .nav-links {
@@ -66,12 +67,12 @@
     }
 
     .nav-links a {
-      color: #111111;
+      color: #333333;
       transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
-      color: #315b43;
+      color: #777777;
     }
 
     /* GENERAL */
@@ -86,7 +87,7 @@
 
     .hero {
       background: #ffffff;
-      padding: 80px 0 65px;
+      padding: 80px 0 80px;
     }
 
     .hero-grid {
@@ -102,7 +103,7 @@
       line-height: 1.3;
       font-weight: 700;
       letter-spacing: 0.04em;
-      color: #111111;
+      color: #222222;
       margin-bottom: 22px;
       text-transform: uppercase;
     }
@@ -111,7 +112,7 @@
       max-width: 500px;
       font-size: 1.2rem;
       line-height: 1.55;
-      color: #526058;
+      color: #666666;
     }
 
     .hero-image {
@@ -122,37 +123,10 @@
       margin-top: 10px;
     }
 
-    /* PHOTO STRIP */
-
-    .photo-strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 65px;
-    }
-
-    .photo-strip figure {
-      margin: 0;
-      overflow: hidden;
-      border-radius: 3px;
-      background: #e9ece8;
-    }
-
-    .photo-strip img {
-      height: 300px;
-      object-fit: contain;
-      background: #f5f5f5;
-      transition: transform 0.35s ease;
-    }
-
-    .photo-strip figure:hover img {
-      transform: scale(1.03);
-    }
-
     /* CONTACT */
 
     .contact-section {
-      background: #26342d;
+      background: #303030;
       color: #ffffff;
       padding: 90px 0;
     }
@@ -167,7 +141,7 @@
 
     .contact-text {
       max-width: 650px;
-      color: #d9e0da;
+      color: #d6d6d6;
       margin-bottom: 30px;
     }
 
@@ -180,27 +154,27 @@
 
     .profile-links a {
       color: #ffffff;
-      border-bottom: 1px solid #91a696;
+      border-bottom: 1px solid #999999;
       padding-bottom: 3px;
       font-size: 0.94rem;
     }
 
     .profile-links a:hover {
-      color: #d9e0da;
+      color: #d6d6d6;
     }
 
     .location {
       margin-top: 28px;
       margin-left: 8px;
-      color: #bfcac1;
+      color: #bdbdbd;
       font-size: 0.92rem;
     }
 
     /* FOOTER */
 
     footer {
-      background: #1d2922;
-      color: #aeb9b1;
+      background: #222222;
+      color: #aaaaaa;
       text-align: center;
       padding: 22px;
       font-size: 0.82rem;
@@ -217,10 +191,6 @@
 
       .hero-image {
         height: 420px;
-      }
-
-      .photo-strip {
-        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -243,18 +213,6 @@
 
       .hero-image {
         height: 320px;
-      }
-
-      .photo-strip {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin-top: 45px;
-      }
-
-      .photo-strip img {
-        height: 220px;
-        object-fit: contain;
-        background: #f5f5f5;
       }
 
       .container {
@@ -301,12 +259,12 @@
         <div>
 
           <h1 class="hero-title">
-            Plants, Diversity &amp; Changing Environments
+            PLANT DIVERSITY &amp; CHANGING ENVIRONMENTS
           </h1>
 
           <p class="hero-statement">
-            I study plant diversity, genetic resources, phenotypic traits,
-            and climatic and environmental variation in cultivated plants.
+            I am interested in studying how plant diversity, genetic resources,
+            and phenotypic traits vary across cultivated crops and environments.
           </p>
 
         </div>
@@ -321,34 +279,6 @@
           >
 
         </div>
-
-      </div>
-
-
-      <!-- HOMEPAGE PHOTO STRIP -->
-
-      <div class="photo-strip">
-
-        <figure>
-          <img
-            src="field_work_stl_1.jpeg"
-            alt="Field work"
-          >
-        </figure>
-
-        <figure>
-          <img
-            src="mobot_1.jpeg"
-            alt="Missouri Botanical Garden research"
-          >
-        </figure>
-
-        <figure>
-          <img
-            src="sdsu_lab_3.JPG"
-            alt="Laboratory research at South Dakota State University"
-          >
-        </figure>
 
       </div>
 
