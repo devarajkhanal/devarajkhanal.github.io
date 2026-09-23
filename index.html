@@ -6,304 +6,546 @@
 
   <title>Deva Raj Khanal | Plant Biology & Horticulture</title>
 
-  <meta
-    name="description"
-    content="Deva Raj Khanal is a plant scientist with training in horticulture and plant biology, with research experience in plant diversity, genetic resources, phenotypic traits, and climatic and environmental variation in cultivated plants."
-  >
+  <meta name="description" content="Deva Raj Khanal studies plant diversity, genetic resources, phenotypic traits, and climatic and environmental variation in cultivated plants.">
 
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      color: #303030;
-      background: #f7f7f5;
-      line-height: 1.65;
+      color: #222;
+      background: #ffffff;
+      line-height: 1.6;
     }
 
     a {
-      color: inherit;
+      color: #2f6f4e;
       text-decoration: none;
     }
 
-    img {
-      display: block;
-      width: 100%;
+    a:hover {
+      text-decoration: underline;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       NAVIGATION
+       ========================= */
 
     nav {
-      width: 100%;
-      border-bottom: 1px solid #ddddda;
+      border-bottom: 1px solid #e5e5e5;
       background: #ffffff;
     }
 
-    .nav-inner {
+    .nav-container {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 20px 28px;
+      padding: 20px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .site-name {
-      font-weight: 800;
-      font-size: 1.3rem;
-      letter-spacing: 0.02em;
-      color: #222222;
+      font-size: 20px;
+      font-weight: 700;
+      color: #222;
     }
 
     .nav-links {
       display: flex;
-      gap: 30px;
-      font-size: 1rem;
-      font-weight: 700;
+      gap: 28px;
+      align-items: center;
     }
 
     .nav-links a {
-      color: #333333;
-      transition: color 0.2s ease;
+      color: #444;
+      font-size: 15px;
     }
 
     .nav-links a:hover {
-      color: #777777;
+      color: #2f6f4e;
+      text-decoration: none;
     }
 
-    /* GENERAL */
 
-    .container {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 28px;
-    }
-
-    /* HERO */
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
-      background: #ffffff;
-      padding: 80px 0 80px;
-    }
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 75px 30px 80px;
 
-    .hero-grid {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
+      grid-template-columns: 0.9fr 1.1fr;
       gap: 55px;
-      align-items: start;
+
+      align-items: center;
     }
 
-    .hero-title {
-      max-width: 500px;
-      font-size: 1.45rem;
-      line-height: 1.3;
+    .hero-text h1 {
+      margin: 0 0 22px;
+
+      font-size: 46px;
+      line-height: 1.15;
       font-weight: 700;
-      letter-spacing: 0.04em;
-      color: #222222;
-      margin-bottom: 22px;
-      text-transform: uppercase;
+
+      color: #222;
     }
 
-    .hero-statement {
-      max-width: 500px;
-      font-size: 1.2rem;
-      line-height: 1.55;
-      color: #666666;
+    .hero-text p {
+      margin: 0;
+      max-width: 560px;
+
+      font-size: 19px;
+      line-height: 1.7;
+
+      color: #555;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+
+      padding: 11px 20px;
+
+      background: #2f6f4e;
+      color: #ffffff;
+
+      border: 1px solid #2f6f4e;
+      border-radius: 4px;
+
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      color: #ffffff;
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #2f6f4e;
+    }
+
+    .button.secondary:hover {
+      background: #2f6f4e;
+      color: #ffffff;
+    }
+
+
+    /* =========================
+       HERO IMAGES
+       ========================= */
+
+    .hero-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
     }
 
     .hero-image {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-top: 10px;
+      height: 430px;
+      overflow: hidden;
+      background: #f2f2f0;
     }
 
-    /* CONTACT */
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      object-fit: cover;
+    }
+
+
+    /* =========================
+       PHOTO STRIP
+       ========================= */
+
+    .photo-section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 30px 75px;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: 300px;
+
+      display: block;
+
+      object-fit: contain;
+
+      background: #f5f5f5;
+    }
+
+
+    /* =========================
+       CONTACT
+       ========================= */
 
     .contact-section {
-      background: #303030;
-      color: #ffffff;
-      padding: 90px 0;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 20px 30px 85px;
+
+      text-align: center;
     }
 
     .contact-section h2 {
-      color: #ffffff;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-      font-weight: 600;
+      margin: 0 0 18px;
+
+      font-size: 30px;
+      font-weight: 700;
+
+      color: #222;
+    }
+
+    .contact-section p {
+      margin: 0 auto 25px;
+
+      max-width: 720px;
+
+      color: #555;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      gap: 12px 24px;
+
       margin-bottom: 18px;
     }
 
-    .contact-text {
-      max-width: 650px;
-      color: #d6d6d6;
-      margin-bottom: 30px;
-    }
-
-    .profile-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-      margin-top: 24px;
-    }
-
-    .profile-links a {
-      color: #ffffff;
-      border-bottom: 1px solid #999999;
-      padding-bottom: 3px;
-      font-size: 0.94rem;
-    }
-
-    .profile-links a:hover {
-      color: #d6d6d6;
+    .contact-links a {
+      font-size: 15px;
     }
 
     .location {
-      margin-top: 28px;
+      color: #777;
+      font-size: 14px;
       margin-left: 8px;
-      color: #bdbdbd;
-      font-size: 0.92rem;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
-      background: #222222;
-      color: #aaaaaa;
+      border-top: 1px solid #e5e5e5;
+
+      padding: 25px 30px;
+
       text-align: center;
-      padding: 22px;
-      font-size: 0.82rem;
+
+      color: #777;
+      font-size: 13px;
     }
 
-    /* MOBILE */
+
+    /* =========================
+       TABLET
+       ========================= */
 
     @media (max-width: 900px) {
 
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-      }
-
-      .hero-image {
-        height: 420px;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .nav-inner {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
+      .nav-container {
+        padding: 18px 22px;
       }
 
       .nav-links {
         gap: 18px;
-        flex-wrap: wrap;
       }
 
       .hero {
-        padding: 70px 0 55px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        padding: 60px 25px 65px;
+      }
+
+      .hero-text {
+        max-width: 700px;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+      }
+
+      .hero-images {
+        max-width: 800px;
+      }
+
+      .photo-section {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 650px) {
+
+      .nav-container {
+        flex-direction: column;
+        gap: 12px;
+
+        padding: 18px 20px;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 50px 20px 55px;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      .hero-text p {
+        font-size: 17px;
+      }
+
+      .hero-images {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
       }
 
       .hero-image {
-        height: 320px;
+        height: 300px;
       }
 
-      .container {
-        padding: 0 20px;
+      .photo-section {
+        padding: 0 20px 55px;
+      }
+
+      .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .photo-grid img {
+        height: 300px;
       }
 
       .contact-section {
-        padding: 65px 0;
+        padding: 10px 20px 65px;
+      }
+
+      .contact-links {
+        flex-direction: column;
+        gap: 10px;
       }
     }
+
+
+    /* =========================
+       SMALL MOBILE
+       ========================= */
+
+    @media (max-width: 450px) {
+
+      .hero-images {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        height: 300px;
+      }
+
+      .hero-text h1 {
+        font-size: 32px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- NAVIGATION -->
+
+  <!-- =========================
+       NAVIGATION
+       ========================= -->
 
   <nav>
-    <div class="nav-inner">
+    <div class="nav-container">
 
       <a href="index.html" class="site-name">
         Deva Raj Khanal
       </a>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research &amp; Experience</a>
-        <a href="publications.html">Publications &amp; Presentations</a>
-        <a href="blog.html">Blog</a>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="research.html">
+          Research &amp; Experience
+        </a>
+
+        <a href="publications.html">
+          Publications &amp; Presentations
+        </a>
+
+        <a href="blog.html">
+          Blog
+        </a>
+
       </div>
 
     </div>
   </nav>
 
 
-  <!-- HERO -->
 
-  <header class="hero">
+  <!-- =========================
+       HERO
+       ========================= -->
 
-    <div class="container">
+  <main>
 
-      <div class="hero-grid">
+    <section class="hero">
 
-        <div>
+      <div class="hero-text">
 
-          <h1 class="hero-title">
-            PLANT DIVERSITY &amp; CHANGING ENVIRONMENTS
-          </h1>
+        <h1>
+          Plants, Diversity &amp; Changing Environments
+        </h1>
 
-          <p class="hero-statement">
-            I am interested in studying how plant diversity, genetic resources,
-            and phenotypic traits vary across cultivated crops and environments.
-          </p>
+        <p>
+          I study plant diversity, genetic resources, phenotypic traits,
+          and climatic and environmental variation in cultivated plants.
+        </p>
 
-        </div>
+        <div class="hero-buttons">
 
+          <a href="research.html" class="button">
+            Explore My Research
+          </a>
 
-        <div>
-
-          <img
-            class="hero-image"
-            src="mango_2.jpeg"
-            alt="Mango research"
-          >
+          <a href="publications.html" class="button secondary">
+            Publications &amp; Presentations
+          </a>
 
         </div>
 
       </div>
 
-    </div>
 
-  </header>
+      <div class="hero-images">
+
+        <div class="hero-image">
+          <img
+            src="images/mango_2.jpeg"
+            alt="Mango research"
+          >
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="images/germany_alps_field.jpeg"
+            alt="Field research in Germany"
+          >
+        </div>
+
+      </div>
+
+    </section>
 
 
-  <!-- CONTACT / PROFILES -->
 
-  <section class="contact-section">
+    <!-- =========================
+         PHOTO STRIP
+         ========================= -->
 
-    <div class="container">
+    <section class="photo-section">
+
+      <div class="photo-grid">
+
+        <img
+          src="images/field_work_stl_1.jpeg"
+          alt="Field research"
+        >
+
+        <img
+          src="images/mobot_1.jpeg"
+          alt="Research at Missouri Botanical Garden"
+        >
+
+        <img
+          src="images/sdsu_lab_3.JPG"
+          alt="Laboratory research"
+        >
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+         ========================= -->
+
+    <section class="contact-section">
 
       <h2>
         Contact
       </h2>
 
-      <p class="contact-text">
-        I welcome opportunities to connect about plant diversity and the many
-        ways plants shape our landscapes, food systems, and environments
-        🌱🌳
+      <p>
+        I welcome opportunities to connect about plant diversity and
+        the many ways plants shape our landscapes, food systems,
+        and environments 🌱🌳🥭🍎
       </p>
 
-      <div class="profile-links">
+      <div class="contact-links">
 
         <a href="mailto:khanaldevaraj@gmail.com">
           Email
@@ -319,8 +561,6 @@
 
         <a
           href="#"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           ORCID
         </a>
@@ -347,16 +587,22 @@
         St. Louis, Missouri, United States
       </div>
 
-    </div>
+    </section>
 
-  </section>
+  </main>
 
 
-  <!-- FOOTER -->
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
 
   <footer>
+
     © 2026 Deva Raj Khanal
+
   </footer>
+
 
 </body>
 </html>
