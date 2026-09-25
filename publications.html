@@ -206,75 +206,101 @@
 
 
     /* =========================
-       FELLOWSHIPS, GRANTS &
-       RECOGNITION
-    ========================= */
+   FELLOWSHIPS, GRANTS & RECOGNITION
+========================= */
 
-    .record-list {
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-    }
+.recognition-section {
+  padding: 20px 30px 85px;
+}
 
-    .record-item {
-      display: grid;
-      grid-template-columns: 42% 58%;
-      column-gap: 20px;
+.recognition-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-      padding-bottom: 18px;
+.recognition-container h2 {
+  margin-bottom: 35px;
 
-      border-bottom: 1px solid #dededb;
-    }
+  color: #202020;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 
-    .record-item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
+.recognition-item {
+  padding: 28px 0 30px;
+  border-top: 1px solid #dededb;
+}
 
-    .record-title {
-      color: #222222;
-      font-size: 17px;
-      font-weight: 600;
-      line-height: 1.5;
-    }
+.recognition-item:last-child {
+  border-bottom: 1px solid #dededb;
+}
 
-    .record-details {
-      color: #4a4a4a;
-      font-size: 16px;
-      line-height: 1.6;
-    }
+.recognition-category {
+  margin-bottom: 7px;
 
-    .record-description {
-      margin-top: 3px;
-    }
+  color: #2f6f4e;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.recognition-item h3 {
+  margin-bottom: 6px;
+
+  color: #252525;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.recognition-details {
+  margin-bottom: 8px;
+
+  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.recognition-description {
+  max-width: 720px;
+
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
 
-    /* =========================
-       PROFESSIONAL TRAINING
-    ========================= */
+/* =========================
+   MOBILE
+========================= */
 
-    .training-item {
-      display: grid;
-      grid-template-columns: 42% 58%;
-      column-gap: 20px;
+@media (max-width: 650px) {
 
-      padding-bottom: 18px;
+  .recognition-section {
+    padding: 15px 20px 65px;
+  }
 
-      border-bottom: 1px solid #dededb;
-    }
+  .recognition-container h2 {
+    margin-bottom: 27px;
+    font-size: 30px;
+  }
 
-    .training-title {
-      color: #222222;
-      font-size: 17px;
-      font-weight: 600;
-      line-height: 1.5;
-    }
+  .recognition-item {
+    padding: 24px 0 26px;
+  }
 
-    .training-details {
-      color: #4a4a4a;
-      font-size: 16px;
-      line-height: 1.6;
-    }
+  .recognition-item h3 {
+    font-size: 20px;
+  }
+
+  .recognition-details,
+  .recognition-description {
+    font-size: 16px;
+  }
+
+}
 
 
     /* =========================
@@ -615,77 +641,105 @@
 
 
     <!-- =========================
-         FELLOWSHIPS, GRANTS &
-         RECOGNITION
-    ========================= -->
+     FELLOWSHIPS, GRANTS & RECOGNITION
+========================= -->
 
-    <section class="section">
+<section class="recognition-section">
 
-      <h2>
-        Fellowships, Grants &amp; Recognition
-      </h2>
+  <div class="recognition-container">
 
-      <div class="record-list">
-
-
-        <div class="record-item">
-
-          <div class="record-title">
-            William L. Brown Graduate Student Fellowship
-          </div>
-
-          <div class="record-details">
-            Missouri Botanical Garden (2022–2026)
-
-            <div class="record-description">
-             Awarded competitive Graduate Research Fellowship in collaboration with Saint Louis University
-          </div>
-
-        </div>
+    <h2>
+      Fellowships, Grants &amp; Recognition
+    </h2>
 
 
-        <div class="record-item">
+    <!-- Fellowship -->
 
-          <div class="record-title">
-            Summer School TaxonOmics
-          </div>
+    <article class="recognition-item">
 
-          <div class="record-details">
-            University of Munich &amp; Munich Botanical Garden, Germany (2023)
+      <p class="recognition-category">
+        Fellowship
+      </p>
 
-            <div class="record-description">
-              Fully funded two-week graduate training program in botanical research.
-            </div>
-          </div>
+      <h3>
+        William L. Brown Graduate Student Fellowship
+      </h3>
 
-        <div class="record-item">
+      <p class="recognition-details">
+        Missouri Botanical Garden | 2022–2026
+      </p>
 
-          <div class="record-title">
-            Outstanding Graduate Student Award
-          </div>
+      <p class="recognition-description">
+        Graduate fellowship supporting graduate research in collaboration with
+        Saint Louis University.
+      </p>
 
-          <div class="record-details">
-            Natural Resource Management, South Dakota State University (2022)
-          </div>
-
-        </div>
+    </article>
 
 
-        <div class="record-item">
+    <!-- Grant -->
 
-          <div class="record-title">
-            Graduate Student Research Grant ($1,500)
-          </div>
+    <article class="recognition-item">
 
-          <div class="record-details">
-            American Society of Plant Taxonomists (2021)
-          </div>
+      <p class="recognition-category">
+        Research Grant
+      </p>
+
+      <h3>
+        Graduate Student Research Grant
+      </h3>
+
+      <p class="recognition-details">
+        American Society of Plant Taxonomists | 2021 | $1,500
+      </p>
+
+    </article>
 
 
-      </div>
+    <!-- Award -->
 
-    </section>
+    <article class="recognition-item">
 
+      <p class="recognition-category">
+        Award and Recognition
+      </p>
+
+      <h3>
+        NRM Outstanding Biological Science Graduate Student Award
+      </h3>
+
+      <p class="recognition-details">
+        South Dakota State University | 2022
+      </p>
+
+    </article>
+
+
+    <!-- Training -->
+
+    <article class="recognition-item">
+
+      <p class="recognition-category">
+        Professional Training
+      </p>
+
+      <h3>
+        Summer School TaxonOmics
+      </h3>
+
+      <p class="recognition-details">
+        University of Munich &amp; Munich Botanical Garden, Germany | 2023
+      </p>
+
+      <p class="recognition-description">
+        Two-week graduate training program focused on botanical research.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
 
 
     <!-- =========================
