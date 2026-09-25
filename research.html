@@ -268,26 +268,47 @@
 
 
     /* =========================
-       RESEARCH SKILLS & METHODS
-    ========================= */
-.skills-list {
-  max-width: 1100px;
+   RESEARCH SKILLS & METHODS
+   ========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.skills-list p {
-  margin-bottom: 16px;
-  color: #3d3d3d;
-  font-size: 16px;
-  line-height: 1.7;
+.skill-box {
+  padding: 24px 24px 22px;
+
+  background: #ffffff;
+  border: 1px solid #dededb;
+  border-radius: 4px;
 }
 
-.skills-list p:last-child {
-  margin-bottom: 0;
-}
+.skill-box h3 {
+  margin-bottom: 15px;
 
-.skills-list strong {
   color: #222222;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.skill-box ul {
+  margin: 0;
+  padding-left: 19px;
+}
+
+.skill-box li {
+  margin-bottom: 7px;
+
+  color: #4a4a4a;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.skill-box li:last-child {
+  margin-bottom: 0;
 }
 
 
@@ -308,121 +329,42 @@
     }
 
 
-    /* =========================
-       TABLET
-    ========================= */
+   /* =========================
+   TABLET
+========================= */
 
-    @media (max-width: 900px) {
+@media (max-width: 900px) {
 
-      .nav-container {
-        padding: 18px 24px;
-      }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      .nav-links {
-        gap: 18px;
-      }
-
-      main {
-        padding: 55px 25px 75px;
-      }
-
-      .experience-images {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .experience-images img {
-        height: 240px;
-      }
-
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-
-    }
+}
 
 
-    /* =========================
-       MOBILE
-    ========================= */
+   /* =========================
+   MOBILE
+========================= */
 
-    @media (max-width: 650px) {
+@media (max-width: 650px) {
 
-      .nav-container {
-        flex-direction: column;
-        gap: 13px;
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 
-        padding: 18px 20px;
-      }
+  .skill-box {
+    padding: 21px 20px;
+  }
 
-      .site-name {
-        font-size: 20px;
-      }
+  .skill-box h3 {
+    font-size: 18px;
+  }
 
-      .nav-links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px 16px;
-      }
+  .skill-box li {
+    font-size: 15px;
+  }
 
-      .nav-links a {
-        font-size: 14px;
-      }
-
-      main {
-        padding: 45px 20px 65px;
-      }
-
-      .research-section {
-        margin-bottom: 55px;
-      }
-
-      .research-section > h2 {
-        margin-bottom: 25px;
-        font-size: 29px;
-      }
-
-      .research-entry h3 {
-        font-size: 21px;
-      }
-
-      .entry-meta,
-      .experience-meta {
-        font-size: 15px;
-      }
-
-      .research-entry p.description,
-      .experience-entry p {
-        font-size: 16px;
-      }
-
-      .experience-entry h3 {
-        font-size: 22px;
-      }
-
-      .experience-images {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-
-      .experience-images img {
-        height: 190px;
-      }
-
-      .internship-images {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-
-      .internship-images img {
-        height: 260px;
-      }
-
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-
-    }
-
+}
 
     /* =========================
        SMALL MOBILE
@@ -707,7 +649,7 @@ Conducted climatic variation analyses using georeferenced botanical records and 
 
 
 
-    <!-- =========================
+   <!-- =========================
      RESEARCH SKILLS & METHODS
 ========================= -->
 
@@ -717,55 +659,141 @@ Conducted climatic variation analyses using georeferenced botanical records and 
     Research Skills &amp; Methods
   </h2>
 
-  <div class="skills-list">
+  <div class="skills-grid">
 
-    <p>
-      <strong>Botanical &amp; Herbarium Management:</strong>
-      Specimen handling, voucher preparation, destructive and non-destructive sampling,
-      labeling, filing, and metadata management.
-    </p>
 
-    <p>
-      <strong>Field Research:</strong>
-      Crop care, plant propagation, phenology observations, tissue sampling,
-      and field research across annual, perennial, and horticultural systems.
-    </p>
+    <!-- Botanical Collections -->
+    <div class="skill-box">
 
-    <p>
-      <strong>Plant Phenotyping:</strong>
-      Plant trait measurement, non-destructive phenotyping,
-      VIS–SWIR hyperspectral leaf reflectance (350–2500 nm),
-      and trait characterization.
-    </p>
+      <h3>
+        Botanical &amp; Herbarium Management
+      </h3>
 
-    <p>
-      <strong>Lab &amp; Molecular Methods:</strong>
-      DNA extraction from fresh and dried tissues, DNA quality assessment and
-      quantification (Qubit, NanoDrop, gel electrophoresis), sample tracking,
-      and molecular workflow preparation.
-    </p>
+      <ul>
+        <li>Plant genetic resources and botanical collections</li>
+        <li>Specimen handling and collection management</li>
+        <li>Destructive and non-destructive sampling</li>
+        <li>Voucher preparation</li>
+        <li>Specimen labeling, filing, and documentation</li>
+        <li>Metadata organization and herbarium records</li>
+      </ul>
 
-    <p>
-      <strong>Phylogenetics &amp; Bioinformatics:</strong>
-      Gene-tree and species-tree approaches, evolutionary relationship assessment,
-      hybrid assessment, post-sequencing analysis, and bioinformatics workflows.
-    </p>
+    </div>
 
-    <p>
-      <strong>Environmental &amp; GIS Data:</strong>
-      Georeferenced botanical records, environmental and climatic datasets,
-      spatially associated plant observations, metadata organization,
-      and analysis of environmental variation.
-    </p>
 
-    <p>
-      <strong>Software &amp; Computing:</strong>
-      Google Workspace &amp; Microsoft Office (Advanced) •
-      R/RStudio (Proficient) •
-      Linux (Comfortable) •
-      Python (Beginner) •
-      High-Performance Computing (Comfortable)
-    </p>
+    <!-- Field Research -->
+    <div class="skill-box">
+
+      <h3>
+        Field Research
+      </h3>
+
+      <ul>
+        <li>Planting and crop care</li>
+        <li>Plant propagation</li>
+        <li>Field maintenance and data collection</li>
+        <li>Phenology observations</li>
+        <li>Pruning, weeding, and harvesting</li>
+        <li>Tissue sampling</li>
+      </ul>
+
+    </div>
+
+
+    <!-- Phenotyping -->
+    <div class="skill-box">
+
+      <h3>
+        Plant Phenotyping &amp; Trait Measurement
+      </h3>
+
+      <ul>
+        <li>Plant trait data collection</li>
+        <li>Specimen measurements</li>
+        <li>Non-destructive phenotyping</li>
+        <li>Hyperspectral leaf reflectance</li>
+        <li>VIS–SWIR spectral measurements</li>
+        <li>Trait characterization</li>
+      </ul>
+
+    </div>
+
+
+    <!-- Molecular Methods -->
+    <div class="skill-box">
+
+      <h3>
+        Molecular Laboratory Methods
+      </h3>
+
+      <ul>
+        <li>DNA extraction from fresh and dried tissues</li>
+        <li>DNA quality assessment</li>
+        <li>DNA quantification using Qubit and NanoDrop</li>
+        <li>Gel electrophoresis</li>
+        <li>Molecular sample preparation and tracking</li>
+        <li>Plant genetic and phylogenetic workflows</li>
+      </ul>
+
+    </div>
+
+
+    <!-- Phylogenetics -->
+    <div class="skill-box">
+
+      <h3>
+        Phylogenetic Methods &amp; Bioinformatics
+      </h3>
+
+      <ul>
+        <li>Gene-tree and species-tree approaches</li>
+        <li>Evolutionary relationship assessment</li>
+        <li>Hybridization assessment</li>
+        <li>Post-sequencing data analysis</li>
+        <li>Bioinformatics workflows</li>
+        <li>Plant molecular data analysis</li>
+      </ul>
+
+    </div>
+
+
+    <!-- Environmental Data -->
+    <div class="skill-box">
+
+      <h3>
+        Environmental &amp; Geospatial Data
+      </h3>
+
+      <ul>
+        <li>Georeferenced plant records</li>
+        <li>Botanical occurrence data</li>
+        <li>Environmental datasets</li>
+        <li>Climatic variables</li>
+        <li>Geographic and environmental metadata</li>
+        <li>Plant distribution and environmental variation</li>
+      </ul>
+
+    </div>
+
+
+    <!-- Software -->
+    <div class="skill-box">
+
+      <h3>
+        Software &amp; Computing
+      </h3>
+
+      <ul>
+        <li><strong>R / RStudio:</strong> Proficient</li>
+        <li><strong>Google Workspace:</strong> Advanced</li>
+        <li><strong>Microsoft Office:</strong> Advanced</li>
+        <li><strong>Python:</strong> Beginner</li>
+        <li><strong>Linux:</strong> Comfortable</li>
+        <li><strong>HPC:</strong> Familiar with computing environments</li>
+      </ul>
+
+    </div>
+
 
   </div>
 
