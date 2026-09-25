@@ -1,264 +1,852 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Research &amp; Experience | Deva Raj Khanal</title>
+
+  <meta
+    name="description"
+    content="Research experience of Deva Raj Khanal in plant diversity, genetic resources, phenotyping, molecular research, phylogenetics, environmental variation, and horticultural crops."
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #303030;
+      background: #f7f7f5;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #2f6f4e;
+    }
+
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #dededb;
+    }
+
+    .nav-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 21px 30px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-name {
+      color: #1f1f1f;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #303030;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #2f6f4e;
+    }
+
+
+    /* =========================
+       MAIN CONTENT
+    ========================= */
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 65px 30px 90px;
+    }
+
+
+    /* =========================
+       SECTION HEADINGS
+    ========================= */
+
+    .research-section {
+      margin-bottom: 70px;
+    }
+
+    .research-section > h2 {
+      margin-bottom: 32px;
+
+      color: #1f1f1f;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.2px;
+    }
+
+
+    /* =========================
+       GRADUATE RESEARCH
+    ========================= */
+
+    .research-entry {
+      margin-bottom: 48px;
+    }
+
+    .research-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-meta {
+      margin-bottom: 8px;
+
+      color: #555555;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .research-entry h3 {
+      margin-bottom: 13px;
+
+      color: #222222;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.35;
+    }
+
+    .research-entry h3 a {
+      color: #222222;
+      text-decoration: none;
+    }
+
+    .research-entry h3 a:hover {
+      color: #2f6f4e;
+      text-decoration: underline;
+    }
+
+    .research-entry p.description {
+      max-width: 1000px;
+
+      margin-bottom: 12px;
+
+      color: #3d3d3d;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .research-link {
+      color: #2f6f4e;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .research-link:hover {
+      color: #1f5136;
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       RESEARCH EXPERIENCE
+    ========================= */
+
+    .experience-entry {
+      margin-bottom: 65px;
+    }
+
+    .experience-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .experience-entry h3 {
+      margin-bottom: 6px;
+
+      color: #222222;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .experience-meta {
+      margin-bottom: 16px;
+
+      color: #555555;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .experience-entry p {
+      max-width: 1050px;
+
+      margin-bottom: 22px;
+
+      color: #3d3d3d;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+
+    /* =========================
+       EXPERIENCE PHOTO ROW
+       Four images on one line
+    ========================= */
+
+    .experience-images {
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+
+      margin-top: 22px;
+    }
+
+    .experience-images img {
+      width: 100%;
+      height: 220px;
+
+      display: block;
+
+      object-fit: contain;
+      object-position: center;
+
+      background: #ffffff;
+    }
+
+
+    /* =========================
+       INTERNSHIP PHOTOS
+       Two images side by side
+    ========================= */
+
+    .internship-images {
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+
+      margin-top: 22px;
+    }
+
+    .internship-images img {
+      width: 100%;
+      height: 300px;
+
+      display: block;
+
+      object-fit: contain;
+      object-position: center;
+
+      background: #ffffff;
+    }
+
+
+    /* =========================
+       RESEARCH SKILLS & METHODS
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px 40px;
+    }
+
+    .skill-item {
+      padding-top: 20px;
+
+      border-top: 1px solid #dededb;
+    }
+
+    .skill-item h3 {
+      margin-bottom: 8px;
+
+      color: #222222;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .skill-item p {
+      color: #3d3d3d;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      border-top: 1px solid #dededb;
+
+      padding: 25px 30px;
+
+      color: #4a4a4a;
+      background: #ffffff;
+
+      font-size: 14px;
+      text-align: center;
+    }
+
+
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav-container {
+        padding: 18px 24px;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      main {
+        padding: 55px 25px 75px;
+      }
+
+      .experience-images {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .experience-images img {
+        height: 240px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 650px) {
+
+      .nav-container {
+        flex-direction: column;
+        gap: 13px;
+
+        padding: 18px 20px;
+      }
+
+      .site-name {
+        font-size: 20px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 16px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+      }
+
+      main {
+        padding: 45px 20px 65px;
+      }
+
+      .research-section {
+        margin-bottom: 55px;
+      }
+
+      .research-section > h2 {
+        margin-bottom: 25px;
+        font-size: 29px;
+      }
+
+      .research-entry h3 {
+        font-size: 21px;
+      }
+
+      .entry-meta,
+      .experience-meta {
+        font-size: 15px;
+      }
+
+      .research-entry p.description,
+      .experience-entry p {
+        font-size: 16px;
+      }
+
+      .experience-entry h3 {
+        font-size: 22px;
+      }
+
+      .experience-images {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .experience-images img {
+        height: 190px;
+      }
+
+      .internship-images {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .internship-images img {
+        height: 260px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    /* =========================
+       SMALL MOBILE
+    ========================= */
+
+    @media (max-width: 450px) {
+
+      .experience-images {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .experience-images img {
+        height: 150px;
+      }
+
+      .internship-images img {
+        height: 230px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
 
   <!-- =========================
-       PAGE HEADER
-       ========================= -->
+       NAVIGATION
+  ========================= -->
 
-  <section class="page-header">
+  <nav>
 
-    <h1>
-      Plant Diversity, Genetic Resources, and Environmental Variation
-    </h1>
+    <div class="nav-container">
 
-    <p class="page-intro">
-      I study plant diversity, genetic resources, phenotypic traits, and
-      climatic and environmental variation in cultivated plants. My research
-      experience spans botanical collections, plant phenotyping, molecular
-      approaches, phylogenetic research, environmental datasets, and
-      horticultural crop research.
-    </p>
-
-  </section>
-
-
-  <!-- =========================
-       COMPLETED RESEARCH PROJECTS
-       ========================= -->
-
-  <section class="research-section">
-
-    <h2>
-      Completed Research Projects
-    </h2>
-
-
-    <!-- =========================
-         MANGO PROJECT
-         ========================= -->
-
-    <article class="research-entry">
-
-      <p class="entry-meta">
-        Saint Louis University &amp; Missouri Botanical Garden (2022–2026)
-      </p>
-
-      <h3>
-        Climatic niche characterization of <em>Mangifera indica</em>
-      </h3>
-
-      <p>
-        Research examining climatic and environmental variation associated
-        with cultivated mango using georeferenced botanical records,
-        environmental datasets, botanical collections, and plant trait data.
-      </p>
-
-      <a href="#" class="research-link">
-        Read more about my thesis
+      <a href="index.html" class="site-name">
+        Deva Raj Khanal
       </a>
 
-    </article>
+      <div class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="research.html">
+          Research &amp; Experience
+        </a>
+
+        <a href="publications.html">
+          Publications &amp; Presentations
+        </a>
+
+        <a href="blog.html">
+          Blog
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================= -->
+
+  <main>
 
 
     <!-- =========================
-         RUSSIAN THISTLE PROJECT
-         ========================= -->
+         COMPLETED RESEARCH PROJECTS
+    ========================= -->
 
-    <article class="research-entry">
+    <section class="research-section">
 
-      <p class="entry-meta">
-        South Dakota State University (2019–2022)
-      </p>
+      <h2>
+        Completed Research Projects (Graduate Thesis)
+      </h2>
 
-      <h3>
+
+      <!-- Mango Thesis -->
+
+      <article class="research-entry">
+
+        <p class="entry-meta">
+          Saint Louis University &amp; Missouri Botanical Garden (2022–2026)
+        </p>
+
+        <h3>
+          Climatic niche characterization of <em>Mangifera indica</em>
+        </h3>
+
+        <p class="description">
+          Research examining climatic and environmental variation associated
+          with cultivated mango using georeferenced botanical records,
+          environmental datasets, botanical collections, and plant trait data.
+        </p>
+
+        <a href="#" class="research-link">
+          Read more about my thesis
+        </a>
+
+      </article>
+
+
+      <!-- Russian Thistle Thesis -->
+
+      <article class="research-entry">
+
+        <p class="entry-meta">
+          South Dakota State University (2019–2022)
+        </p>
+
+        <h3>
+          Disentangling the Complex Evolutionary History of Invasive Russian
+          Thistle: Phylogenetic Relationships, the Role of Hybridization,
+          and Public Engagement
+        </h3>
+
+        <p class="description">
+          Research focused on phylogenetic relationships, hybridization, and
+          evolutionary history within the Russian thistle group, using
+          target-capture sequencing, molecular data, bioinformatics, and
+          plant collections.
+        </p>
+
         <a
           href="https://search.proquest.com/openview/ff9dba6d31e20028058ed3593da28e98/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"
           target="_blank"
           rel="noopener noreferrer"
+          class="research-link"
         >
-          Disentangling the Complex Evolutionary History of Invasive Russian
-          Thistle: Phylogenetic Relationships, the Role of Hybridization,
-          and Public Engagement
+          Read more about my thesis
         </a>
-      </h3>
 
-      <p>
-        Research focused on phylogenetic relationships, hybridization, and
-        evolutionary history within the Russian thistle group, using
-        target-capture sequencing, molecular data, bioinformatics, and
-        plant collections.
-      </p>
+      </article>
 
-      <a
-        href="https://search.proquest.com/openview/ff9dba6d31e20028058ed3593da28e98/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="research-link"
-      >
-        Read more about my thesis
-      </a>
+    </section>
 
-    </article>
 
-  </section>
+
+    <!-- =========================
+         RESEARCH EXPERIENCE
+    ========================= -->
+
+    <section class="research-section">
+
+      <h2>
+        Research Experience
+      </h2>
+
+
+      <!-- =========================
+           SAINT LOUIS UNIVERSITY
+      ========================= -->
+
+      <article class="experience-entry">
+
+        <h3>
+          Graduate Research Assistant
+        </h3>
+
+        <p class="experience-meta">
+          Saint Louis University &amp; Missouri Botanical Garden | 2022–2026
+        </p>
+
+        <p>
+          Research involving plant genetic resources, herbarium and botanical
+          collections, georeferenced plant records, environmental datasets,
+          plant trait data, hyperspectral leaf scanning, DNA extraction, and
+          molecular research.
+        </p>
+
+
+        <div class="experience-images">
+
+          <img
+            src="images/mobot_1.jpeg"
+            alt="Research at Missouri Botanical Garden"
+          >
+
+          <img
+            src="images/mobot_2.jpeg"
+            alt="Research at Missouri Botanical Garden"
+          >
+
+          <img
+            src="images/field_work_stl_1.jpeg"
+            alt="Field research in St. Louis"
+          >
+
+          <img
+            src="images/spectral_2.jpeg"
+            alt="Hyperspectral plant phenotyping research"
+          >
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================
+           SOUTH DAKOTA STATE UNIVERSITY
+      ========================= -->
+
+      <article class="experience-entry">
+
+        <h3>
+          Graduate Research &amp; Teaching Assistant
+        </h3>
+
+        <p class="experience-meta">
+          South Dakota State University | 2019–2022
+        </p>
+
+        <p>
+          Research involving plant collections, voucher and molecular records,
+          target-capture sequencing, phylogenetic research, hybridization,
+          bioinformatics, and teaching support.
+        </p>
+
+
+        <div class="experience-images">
+
+          <img
+            src="images/sdsu_ms_exit.jpeg"
+            alt="South Dakota State University research"
+          >
+
+          <img
+            src="images/sdsu_3.jpeg"
+            alt="Research at South Dakota State University"
+          >
+
+          <img
+            src="images/sdsu_lab_3.JPG"
+            alt="Laboratory research at South Dakota State University"
+          >
+
+          <img
+            src="images/sdsu_lab_6.JPG"
+            alt="Laboratory research at South Dakota State University"
+          >
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================
+           INTERNSHIP WORK
+      ========================= -->
+
+      <article class="experience-entry">
+
+        <h3>
+          Internship Work
+        </h3>
+
+        <p class="experience-meta">
+          Horticultural Research &amp; Field Work
+        </p>
+
+        <p>
+          Practical horticultural experience involving plant care, field
+          activities, and work with cultivated plants.
+        </p>
+
+
+        <div class="internship-images">
+
+          <img
+            src="images/tulip_2.JPG"
+            alt="Tulip horticultural field work"
+          >
+
+          <img
+            src="images/tulip_ilam_1.JPG"
+            alt="Tulip horticultural work in Ilam, Nepal"
+          >
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESEARCH SKILLS & METHODS
+    ========================= -->
+
+    <section class="research-section">
+
+      <h2>
+        Research Skills &amp; Methods
+      </h2>
+
+
+      <div class="skills-grid">
+
+
+        <div class="skill-item">
+
+          <h3>
+            Botanical Collections &amp; Herbarium Research
+          </h3>
+
+          <p>
+            Herbarium specimen handling, destructive sampling, labeling,
+            filing, metadata organization, voucher preparation, specimen
+            documentation, and botanical collections.
+          </p>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <h3>
+            Field &amp; Horticultural Research
+          </h3>
+
+          <p>
+            Planting, crop care, weeding, harvesting, vineyard maintenance,
+            tendril support, pruning, and field-based work with perennial
+            and horticultural crops.
+          </p>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <h3>
+            Plant Phenotyping &amp; Trait Characterization
+          </h3>
+
+          <p>
+            Hyperspectral leaf scanning, plant trait data collection,
+            specimen measurements, trait characterization, and integration
+            of plant observations with environmental information.
+          </p>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <h3>
+            Molecular Laboratory Methods
+          </h3>
+
+          <p>
+            Plant DNA extraction, DNA quality assessment, preparation and
+            organization of molecular samples, and laboratory workflows
+            supporting plant genetic and phylogenetic research.
+          </p>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <h3>
+            Phylogenetic Methods, Sequencing &amp; Bioinformatics
+          </h3>
+
+          <p>
+            Target-capture sequencing, phylogenetic research, evolutionary
+            relationships, hybridization studies, and bioinformatics workflows
+            for plant molecular data.
+          </p>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <h3>
+            Environmental &amp; Geospatial Data
+          </h3>
+
+          <p>
+            Georeferenced plant records, environmental datasets, climatic
+            variables, spatially associated plant observations, and analysis
+            of environmental variation in relation to plant distributions.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
 
 
   <!-- =========================
-       RESEARCH EXPERIENCE
-       ========================= -->
+       FOOTER
+  ========================= -->
 
-  <section class="research-section">
-
-    <h2>
-      Research Experience
-    </h2>
+  <footer>
+    © 2026 Deva Raj Khanal
+  </footer>
 
 
-    <article class="research-entry">
+</body>
 
-      <p class="entry-meta">
-        Saint Louis University &amp; Missouri Botanical Garden (2022–2026)
-      </p>
-
-      <h3>
-        Graduate Research Assistant
-      </h3>
-
-      <p>
-        Research involving plant genetic resources, herbarium and botanical
-        collections, georeferenced plant records, environmental datasets,
-        plant trait data, hyperspectral leaf scanning, DNA extraction, and
-        molecular research.
-      </p>
-
-    </article>
-
-
-    <article class="research-entry">
-
-      <p class="entry-meta">
-        South Dakota State University (2019–2022)
-      </p>
-
-      <h3>
-        Graduate Research &amp; Teaching Assistant
-      </h3>
-
-      <p>
-        Research involving plant collections, voucher and molecular records,
-        target-capture sequencing, phylogenetic research, hybridization,
-        bioinformatics, and teaching support.
-      </p>
-
-    </article>
-
-  </section>
-
-
-  <!-- =========================
-       RESEARCH SKILLS & METHODS
-       ========================= -->
-
-  <section class="research-section">
-
-    <h2>
-      Research Skills &amp; Methods
-    </h2>
-
-    <div class="skills-grid">
-
-
-      <div class="skill-item">
-
-        <h3>
-          Botanical Collections &amp; Herbarium Research
-        </h3>
-
-        <p>
-          Herbarium specimen handling, destructive sampling, labeling,
-          filing, metadata organization, voucher preparation, specimen
-          documentation, and botanical collections.
-        </p>
-
-      </div>
-
-
-      <div class="skill-item">
-
-        <h3>
-          Field &amp; Horticultural Research
-        </h3>
-
-        <p>
-          Planting, crop care, weeding, harvesting, vineyard maintenance,
-          tendril support, pruning, and field-based work with perennial
-          and horticultural crops.
-        </p>
-
-      </div>
-
-
-      <div class="skill-item">
-
-        <h3>
-          Plant Phenotyping &amp; Trait Characterization
-        </h3>
-
-        <p>
-          Hyperspectral leaf scanning, plant trait data collection,
-          specimen measurements, trait characterization, and integration
-          of plant observations with environmental information.
-        </p>
-
-      </div>
-
-
-      <div class="skill-item">
-
-        <h3>
-          Molecular Laboratory Methods
-        </h3>
-
-        <p>
-          Plant DNA extraction, DNA quality assessment, preparation and
-          organization of molecular samples, and laboratory workflows
-          supporting plant genetic and phylogenetic research.
-        </p>
-
-      </div>
-
-
-      <div class="skill-item">
-
-        <h3>
-          Phylogenetic Methods, Sequencing &amp; Bioinformatics
-        </h3>
-
-        <p>
-          Target-capture sequencing, phylogenetic research, evolutionary
-          relationships, hybridization studies, and bioinformatics workflows
-          for plant molecular data.
-        </p>
-
-      </div>
-
-
-      <div class="skill-item">
-
-        <h3>
-          Environmental &amp; Geospatial Data
-        </h3>
-
-        <p>
-          Georeferenced plant records, environmental datasets, climatic
-          variables, spatially associated plant observations, and analysis
-          of environmental variation in relation to plant distributions.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-</main>
+</html>
