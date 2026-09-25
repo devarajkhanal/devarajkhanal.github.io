@@ -270,42 +270,24 @@
     /* =========================
        RESEARCH SKILLS & METHODS
     ========================= */
-
-    .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px 40px;
+.skills-list {
+  max-width: 1100px;
 }
 
-.skill-item {
-  padding-top: 20px;
-  border-top: 1px solid #dededb;
-}
-
-.skill-item h3 {
-  margin-bottom: 12px;
-
-  color: #222222;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-.skill-item ul {
-  margin: 0;
-  padding-left: 21px;
-
+.skills-list p {
+  margin-bottom: 16px;
   color: #3d3d3d;
-  font-size: 15.5px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.skill-item li {
-  margin-bottom: 5px;
-}
-
-.skill-item li:last-child {
+.skills-list p:last-child {
   margin-bottom: 0;
+}
+
+.skills-list strong {
+  color: #222222;
+  font-weight: 600;
 }
 
 
@@ -735,138 +717,55 @@ Conducted climatic variation analyses using georeferenced botanical records and 
     Research Skills &amp; Methods
   </h2>
 
+  <div class="skills-list">
 
-  <div class="skills-grid">
+    <p>
+      <strong>Botanical &amp; Herbarium Management:</strong>
+      Specimen handling, voucher preparation, destructive and non-destructive sampling,
+      labeling, filing, and metadata management.
+    </p>
 
+    <p>
+      <strong>Field Research:</strong>
+      Crop care, plant propagation, phenology observations, tissue sampling,
+      and field research across annual, perennial, and horticultural systems.
+    </p>
 
-    <!-- Botanical Collections & Herbarium -->
+    <p>
+      <strong>Plant Phenotyping:</strong>
+      Plant trait measurement, non-destructive phenotyping,
+      VIS–SWIR hyperspectral leaf reflectance (350–2500 nm),
+      and trait characterization.
+    </p>
 
-    <div class="skill-item">
+    <p>
+      <strong>Lab &amp; Molecular Methods:</strong>
+      DNA extraction from fresh and dried tissues, DNA quality assessment and
+      quantification (Qubit, NanoDrop, gel electrophoresis), sample tracking,
+      and molecular workflow preparation.
+    </p>
 
-      <h3>
-        Botanical Collections &amp; Herbarium Research
-      </h3>
+    <p>
+      <strong>Phylogenetics &amp; Bioinformatics:</strong>
+      Gene-tree and species-tree approaches, evolutionary relationship assessment,
+      hybrid assessment, post-sequencing analysis, and bioinformatics workflows.
+    </p>
 
-      <ul>
-        <li>Plant collections, herbarium specimen handling and collection management</li>
-        <li>Destructive and non-destructive specimen sampling</li>
-        <li>Specimen labeling, filing, documentation, and voucher preparation</li>
-        <li>Metadata organization and management of herbarium records</li>
-      </ul>
+    <p>
+      <strong>Environmental &amp; GIS Data:</strong>
+      Georeferenced botanical records, environmental and climatic datasets,
+      spatially associated plant observations, metadata organization,
+      and analysis of environmental variation.
+    </p>
 
-    </div>
-
-
-    <!-- Field Research -->
-
-    <div class="skill-item">
-
-      <h3>
-        Field Research
-      </h3>
-
-      <ul>
-        <li>Planting, crop care, and field maintenance</li>
-        <li>Plant propagation, pruning, weeding, harvesting, and crop management</li>
-        <li>Phenology observations and plant trait recording</li>
-        <li>Field-based research with annual, perennial and horticultural crop systems</li>
-      </ul>
-
-    </div>
-
-
-    <!-- Plant Phenotyping & Trait Measurement -->
-
-    <div class="skill-item">
-
-      <h3>
-        Plant Phenotyping &amp; Trait Measurement
-      </h3>
-
-      <ul>
-        <li>Plant trait data collection and specimen measurements</li>
-        <li>Non-destructive plant phenotyping</li>
-        <li>Hyperspectral leaf reflectance data collection (VIS-SWIR, 350 - 2500nm)</li>
-        <li>Trait characterization</li>
-      </ul>
-
-    </div>
-
-
-    <!-- Molecular Laboratory Methods -->
-
-    <div class="skill-item">
-
-      <h3>
-        Laboratory Methods
-      </h3>
-
-      <ul>
-        <li>DNA extraction (fresh and dried plant tissues) </li>
-        <li>DNA quality assessment and quantification (Qubit, NanoDrop, Gel electrophoresis) </li>
-        <li>Sample preparation, organization, and tracking</li>
-        <li>Lab workflows supporting plant genetic and phylogenetic research</li>
-      </ul>
-
-    </div>
-
-
-    <!-- Phylogenetic Methods & Bioinformatics -->
-
-    <div class="skill-item">
-
-      <h3>
-        Phylogenetic Methods &amp; Bioinformatics
-      </h3>
-
-      <ul>
-        <li>Phylogenetic research using gene-tree and species-tree approaches</li>
-        <li>Assessment of evolutionary relationships</li>
-        <li>Hybrid assessment</li>
-        <li>Post-sequencing data analysis and interpretation</li>
-        <li>Bioinformatics workflows for plant molecular data</li>
-      </ul>
-
-    </div>
-
-
-    <!-- Environmental & Geospatial Data -->
-
-    <div class="skill-item">
-
-      <h3>
-        Environmental &amp; GIS Data
-      </h3>
-
-      <ul>
-        <li>Georeferenced plant records and botanical occurrence data</li>
-        <li>Environmental datasets and climatic variables</li>
-        <li>Spatially associated plant observations</li>
-        <li>Organization of geographic and environmental metadata</li>
-        <li>Analysis of environmental variation in relation to plant distributions</li>
-      </ul>
-
-    </div>
-
-
-    <!-- Software & Computing -->
-
-    <div class="skill-item">
-
-      <h3>
-        Software &amp; Computing
-      </h3>
-
-      <ul>
-        <li><strong>Google Workspace and Microsoft Office :</strong> Advanced</li>
-        <li><strong>R / RStudio:</strong> Proficient</li>
-        <li><strong>Linux:</strong> Comfortable</li>
-        <li><strong>Python:</strong> Beginner</li>
-        <li><strong>High-Performance Computing:</strong> Familiar</li>
-      </ul>
-
-    </div>
-
+    <p>
+      <strong>Software &amp; Computing:</strong>
+      Google Workspace &amp; Microsoft Office (Advanced) •
+      R/RStudio (Proficient) •
+      Linux (Comfortable) •
+      Python (Beginner) •
+      High-Performance Computing (Comfortable)
+    </p>
 
   </div>
 
