@@ -123,18 +123,27 @@
        HERO IMAGES
     ========================= */
 
-    .hero-image img {
+    .hero-images {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.hero-image {
+  height: 330px;
+  overflow: hidden;
+  background: #e8e8e4;
+}
+
+.hero-image img {
   width: 100%;
   height: 100%;
 
   display: block;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* Show the full Germany field photo without cropping */
-.hero-image:nth-child(2) img {
   object-fit: contain;
+  object-position: center;
   background: #e8e8e4;
 }
 
