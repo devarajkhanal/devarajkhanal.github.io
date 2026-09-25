@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Publications & Presentations | Deva Raj Khanal</title>
+  <title>Publications &amp; Presentations | Deva Raj Khanal</title>
+
+  <meta
+    name="description"
+    content="Publications, presentations, fellowships, grants, recognition, training, and professional memberships of Deva Raj Khanal."
+  >
 
   <style>
+
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      background: #ffffff;
-      line-height: 1.6;
+      color: #303030;
+      background: #f7f7f5;
+      line-height: 1.65;
     }
 
     a {
-      color: #2f6f4e;
+      color: inherit;
       text-decoration: none;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #2f6f4e;
     }
 
 
     /* =========================
        NAVIGATION
-       ========================= */
+    ========================= */
 
     nav {
-      border-bottom: 1px solid #e5e5e5;
       background: #ffffff;
+      border-bottom: 1px solid #dededb;
     }
 
     .nav-container {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 20px 30px;
+      padding: 21px 30px;
 
       display: flex;
       justify-content: space-between;
@@ -49,162 +57,218 @@
     }
 
     .site-name {
-      font-size: 20px;
+      color: #1f1f1f;
+      font-size: 21px;
       font-weight: 700;
-      color: #222;
+      letter-spacing: -0.2px;
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
       align-items: center;
+      gap: 28px;
     }
 
     .nav-links a {
-      color: #444;
-      font-size: 15px;
+      color: #303030;
+      font-size: 16px;
+      font-weight: 700;
     }
 
     .nav-links a:hover {
       color: #2f6f4e;
-      text-decoration: none;
     }
 
 
     /* =========================
-       MAIN
-       ========================= */
+       MAIN CONTENT
+    ========================= */
 
     main {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 55px 30px 80px;
+      padding: 65px 30px 90px;
     }
 
-    section {
-      margin-bottom: 65px;
+
+    /* =========================
+       SECTION HEADINGS
+    ========================= */
+
+    .section {
+      margin-bottom: 70px;
     }
 
-    section:last-child {
-      margin-bottom: 0;
-    }
+    .section > h2 {
+      margin-bottom: 30px;
 
-    h1,
-    h2 {
-      color: #222;
-    }
-
-    h2 {
-      margin: 0 0 28px;
-
-      font-size: 30px;
-      line-height: 1.25;
+      color: #1f1f1f;
+      font-size: 32px;
       font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.2px;
     }
 
 
     /* =========================
        PUBLICATIONS
-       ========================= */
+    ========================= */
 
-    .publication-list {
-      margin: 0;
-      padding-left: 28px;
+    .publications-list {
+      list-style: none;
+      counter-reset: publication;
     }
 
-    .publication-list li {
-      margin-bottom: 20px;
-      padding-left: 6px;
+    .publications-list li {
+      counter-increment: publication;
 
-      color: #222;
-      font-size: 16px;
-      line-height: 1.65;
+      position: relative;
+
+      margin-bottom: 23px;
+      padding-left: 34px;
+
+      color: #3d3d3d;
+      font-size: 16.5px;
+      line-height: 1.7;
     }
 
-    .publication-list li:last-child {
-      margin-bottom: 0;
+    .publications-list li::before {
+      content: counter(publication) ".";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      color: #222222;
+      font-weight: 600;
     }
 
-    .publication-list a {
+    .publications-list em {
+      color: #303030;
+    }
+
+    .publication-link {
       color: #2f6f4e;
+      font-weight: 600;
+    }
+
+    .publication-link:hover {
+      text-decoration: underline;
     }
 
 
     /* =========================
-       SCIENTIFIC CONFERENCES
-       ========================= */
+       PRESENTATIONS
+       Three photos side by side
+    ========================= */
 
     .presentation-grid {
+      width: 100%;
+
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
     }
 
     .presentation-item {
-      margin: 0;
+      width: 100%;
     }
 
     .presentation-item img {
       width: 100%;
-      height: 430px;
+      height: 400px;
 
       display: block;
 
       object-fit: contain;
+      object-position: center;
 
-      background: #f5f5f5;
+      background: #ffffff;
     }
 
-    .presentation-item figcaption {
-      margin-top: 10px;
+    .presentation-caption {
+      margin-top: 11px;
 
-      color: #222;
+      color: #4a4a4a;
       font-size: 15px;
       line-height: 1.5;
     }
 
 
     /* =========================
-       COMPACT RECORD ROWS
-       ========================= */
+       FELLOWSHIPS, GRANTS &
+       RECOGNITION
+    ========================= */
 
     .record-list {
       display: flex;
       flex-direction: column;
-      border-top: 1px solid #e5e5e5;
+      gap: 22px;
     }
 
-    .record-row {
+    .record-item {
       display: grid;
-      grid-template-columns: 34% 66%;
+      grid-template-columns: 42% 58%;
+      column-gap: 20px;
 
-      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 18px;
 
-      padding: 18px 0;
+      border-bottom: 1px solid #dededb;
+    }
+
+    .record-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
     .record-title {
-      padding-right: 30px;
-
-      color: #222;
-      font-size: 16px;
+      color: #222222;
+      font-size: 17px;
+      font-weight: 600;
       line-height: 1.5;
     }
 
     .record-details {
-      color: #222;
+      color: #4a4a4a;
       font-size: 16px;
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
-    .record-details a {
-      color: #2f6f4e;
+    .record-description {
+      margin-top: 3px;
     }
 
 
     /* =========================
-       MEMBERSHIPS
-       ========================= */
+       PROFESSIONAL TRAINING
+    ========================= */
+
+    .training-item {
+      display: grid;
+      grid-template-columns: 42% 58%;
+      column-gap: 20px;
+
+      padding-bottom: 18px;
+
+      border-bottom: 1px solid #dededb;
+    }
+
+    .training-title {
+      color: #222222;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .training-details {
+      color: #4a4a4a;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       PROFESSIONAL MEMBERSHIPS
+    ========================= */
 
     .membership-grid {
       display: grid;
@@ -213,40 +277,44 @@
     }
 
     .membership-item {
-      padding: 18px;
+      padding-top: 18px;
 
-      border: 1px solid #e5e5e5;
+      border-top: 1px solid #dededb;
+    }
 
-      color: #222;
+    .membership-item strong {
+      color: #222222;
       font-size: 16px;
+      font-weight: 600;
       line-height: 1.5;
     }
 
 
     /* =========================
        FOOTER
-       ========================= */
+    ========================= */
 
     footer {
-      border-top: 1px solid #e5e5e5;
+      border-top: 1px solid #dededb;
 
       padding: 25px 30px;
 
-      text-align: center;
+      color: #4a4a4a;
+      background: #ffffff;
 
-      color: #777;
-      font-size: 13px;
+      font-size: 14px;
+      text-align: center;
     }
 
 
     /* =========================
        TABLET
-       ========================= */
+    ========================= */
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
 
       .nav-container {
-        padding: 18px 22px;
+        padding: 18px 24px;
       }
 
       .nav-links {
@@ -254,49 +322,50 @@
       }
 
       main {
-        padding: 45px 25px 65px;
+        padding: 55px 25px 75px;
       }
 
       .presentation-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .presentation-item img {
-        height: 430px;
+        height: 350px;
       }
 
-      .record-row {
-        grid-template-columns: 1fr;
-        gap: 6px;
-      }
-
-      .record-title {
-        padding-right: 0;
+      .record-item,
+      .training-item {
+        grid-template-columns: 38% 62%;
       }
 
       .membership-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
 
     /* =========================
        MOBILE
-       ========================= */
+    ========================= */
 
-    @media (max-width: 600px) {
+    @media (max-width: 650px) {
 
       .nav-container {
         flex-direction: column;
-        gap: 12px;
+        gap: 13px;
 
         padding: 18px 20px;
       }
 
+      .site-name {
+        font-size: 20px;
+      }
+
       .nav-links {
-        gap: 14px;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 16px;
       }
 
       .nav-links a {
@@ -304,45 +373,65 @@
       }
 
       main {
-        padding: 40px 20px 60px;
+        padding: 45px 20px 65px;
       }
 
-      section {
-        margin-bottom: 50px;
+      .section {
+        margin-bottom: 55px;
       }
 
-      h2 {
-        font-size: 27px;
-        margin-bottom: 22px;
+      .section > h2 {
+        margin-bottom: 25px;
+        font-size: 29px;
       }
 
-      .publication-list {
-        padding-left: 24px;
+      .publications-list li {
+        padding-left: 30px;
+        font-size: 16px;
       }
 
-      .publication-list li {
-        font-size: 15px;
+      .presentation-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
       }
 
       .presentation-item img {
-        height: 350px;
+        height: 360px;
       }
 
-      .record-row {
-        padding: 16px 0;
+      .record-item,
+      .training-item {
+        display: block;
+        padding-bottom: 20px;
       }
 
       .record-title,
-      .record-details {
-        font-size: 15px;
+      .training-title {
+        margin-bottom: 5px;
       }
 
-      .membership-item {
-        font-size: 15px;
+      .membership-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
       }
+
+    }
+
+
+    /* =========================
+       SMALL MOBILE
+    ========================= */
+
+    @media (max-width: 450px) {
+
+      .presentation-item img {
+        height: 300px;
+      }
+
     }
 
   </style>
+
 </head>
 
 
@@ -351,9 +440,10 @@
 
   <!-- =========================
        NAVIGATION
-       ========================= -->
+  ========================= -->
 
   <nav>
+
     <div class="nav-container">
 
       <a href="index.html" class="site-name">
@@ -381,34 +471,49 @@
       </div>
 
     </div>
-  </nav>
 
+  </nav>
 
 
   <!-- =========================
        MAIN CONTENT
-       ========================= -->
+  ========================= -->
 
   <main>
 
 
     <!-- =========================
          PUBLICATIONS
-         ========================= -->
+    ========================= -->
 
-    <section>
+    <section class="section">
 
       <h2>
         Publications
       </h2>
 
-      <ol class="publication-list">
+      <ol class="publications-list">
 
         <li>
           Tuladhar, A., and D. R. Khanal. 2024.
           <em>Coffee production and pest control in pocket areas of Nepal, a brief review.</em>
           In: <em>III International Symposium on Beverage Crops</em>,
           Acta Horticulturae 1387, 277–282.
+        </li>
+
+        <li>
+          Khanal, D. R. 2023.
+          <em>Disentangling the Complex Evolutionary History of Invasive Russian Thistle:
+          Phylogenetic Relationships, the Role of Hybridization, and Public Engagement.</em>
+          South Dakota State University.
+          <a
+            href="https://search.proquest.com/openview/ff9dba6d31e20028058ed3593da28e98/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="publication-link"
+          >
+            Thesis
+          </a>
         </li>
 
         <li>
@@ -419,6 +524,7 @@
             href="https://extension.sdstate.edu/sites/default/files/2022-05/P-00238.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            class="publication-link"
           >
             PDF
           </a>
@@ -432,6 +538,7 @@
             href="https://extension.sdstate.edu/sites/default/files/2022-05/P-00237.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            class="publication-link"
           >
             PDF
           </a>
@@ -452,88 +559,59 @@
 
     <!-- =========================
          PRESENTATIONS
-         ========================= -->
+    ========================= -->
 
-    <section>
+    <section class="section">
 
-     <h2>
-    Scientific Conferences
-</h2>
+      <h2>
+        Presentations
+      </h2>
 
-<div class="presentation-grid">
+      <div class="presentation-grid">
 
-  <!-- Invasion Genomics Conference -->
 
-  <figure class="presentation-item presentation-pair">
+        <div class="presentation-item">
 
-    <div class="presentation-images">
+          <img
+            src="images/oral_1.jpeg"
+            alt="Participation at Invasion Genomics Conference"
+          >
 
-      <img
-        src="images/oral_1.jpeg"
-        alt="Invasion Genomics Conference, Lafayette, Louisiana (2021)"
-      >
+          <p class="presentation-caption">
+            Participation, Invasion Genomics Conference, Lafayette, Louisiana, 2021.
+          </p>
 
-      <img
-        src="images/oral_2.jpeg"
-        alt="Invasion Genomics Conference, Lafayette, Louisiana (2021)"
-      >
+        </div>
 
-    </div>
 
-    <figcaption>
-      Invasion Genomics Conference, Lafayette, Louisiana (2021)
-    </figcaption>
+        <div class="presentation-item">
 
-  </figure>
+          <img
+            src="images/oral_2.jpeg"
+            alt="Oral presentation at Invasion Genomics Conference"
+          >
 
-</div>
+          <p class="presentation-caption">
+            Oral presentation, Invasion Genomics Conference, Lafayette, Louisiana, 2021.
+          </p>
 
-        <!-- International Mango Symposium -->
+        </div>
 
-        <figure class="presentation-item">
+
+        <div class="presentation-item">
 
           <img
             src="images/poster_1.jpeg"
             alt="Mangifera phylogeny poster presentation"
           >
 
-          <figcaption>
-            Poster presentation at XIII International Mango Symposium, Málaga, Spain (2023). 
-          </figcaption>
-
-        </figure>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         RESEARCH GRANTS
-         ========================= -->
-
-    <section>
-
-      <h2>
-        Research Grants
-      </h2>
-
-      <div class="record-list">
-
-        <div class="record-row">
-
-          <div class="record-title">
-            Graduate Student Research Grant
-          </div>
-
-          <div class="record-details">
-            American Society of Plant Taxonomists | 2021 ($1,500)
-          </div>
+          <p class="presentation-caption">
+            Phylogeny poster presentation, International Mango Symposium, Málaga, Spain, 2023.
+          </p>
 
         </div>
 
+
       </div>
 
     </section>
@@ -541,120 +619,78 @@
 
 
     <!-- =========================
-         FELLOWSHIPS
-         ========================= -->
+         FELLOWSHIPS, GRANTS &
+         RECOGNITION
+    ========================= -->
 
-    <section>
+    <section class="section">
 
       <h2>
-        Fellowships
+        Fellowships, Grants &amp; Recognition
       </h2>
 
       <div class="record-list">
 
-        <div class="record-row">
+
+        <div class="record-item">
 
           <div class="record-title">
             William L. Brown Graduate Student Fellowship
           </div>
 
           <div class="record-details">
-            Missouri Botanical Garden | 2022–2026<br>
-            Graduate fellowship supporting graduate research in collaboration with Saint Louis University.
+            Missouri Botanical Garden (2022–2026)
+
+            <div class="record-description">
+              Graduate fellowship supporting graduate program in collaboration with Saint Louis University.
+            </div>
           </div>
 
         </div>
 
-      </div>
 
-    </section>
-
-
-
-    <!-- =========================
-         AWARDS & RECOGNITION
-         ========================= -->
-
-    <section>
-
-      <h2>
-        Awards &amp; Recognition
-      </h2>
-
-      <div class="record-list">
-
-        <div class="record-row">
-
-          <div class="record-title">
-            NRM Outstanding Biological Science Graduate Student Award
-          </div>
-
-          <div class="record-details">
-            South Dakota State University | 2022
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         PROFESSIONAL TRAINING
-         ========================= -->
-
-    <section>
-
-      <h2>
-        Professional Training
-      </h2>
-
-      <div class="record-list">
-
-        <div class="record-row">
+        <div class="record-item">
 
           <div class="record-title">
             Summer School TaxonOmics
           </div>
 
           <div class="record-details">
-            University of Munich &amp; Munich Botanical Garden, Germany | 2023<br>
-            Two-week graduate training program focused on botanical research.
+            University of Munich, Munich Botanical Garden, Germany (2023)
+
+            <div class="record-description">
+              Fully funded two-week graduate training program in botanical research.
+            </div>
           </div>
 
         </div>
 
-      </div>
 
-    </section>
-
-
-
-    <!-- =========================
-         VOLUNTEER SERVICE
-         ========================= -->
-
-    <section>
-
-      <h2>
-        Volunteer Service
-      </h2>
-
-      <div class="record-list">
-
-        <div class="record-row">
+        <div class="record-item">
 
           <div class="record-title">
-            Volunteer Science Fair Judge
+            NRM Outstanding Biological Science Graduate Student Award
           </div>
 
           <div class="record-details">
-            Academy of Science, St. Louis Regional Science Fair
+            South Dakota State University (2022)
           </div>
 
         </div>
+
+
+        <div class="record-item">
+
+          <div class="record-title">
+            Graduate Student Research Grant ($1,500)
+          </div>
+
+          <div class="record-details">
+            American Society of Plant Taxonomists (2021)
+          </div>
+
+        </div>
+
 
       </div>
 
@@ -664,29 +700,29 @@
 
     <!-- =========================
          PROFESSIONAL MEMBERSHIPS
-         ========================= -->
+    ========================= -->
 
-    <section>
+    <section class="section">
 
       <h2>
         Professional Memberships
       </h2>
 
-      <div class="membership-grid">
+      <ul class="membership-list">
 
-        <div class="membership-item">
-          Botanical Society of America
-        </div>
+        <li>
+          Botanical Society of America (BSA)
+        </li>
 
-        <div class="membership-item">
-          American Society for Horticultural Science
-        </div>
+        <li>
+          American Society for Horticultural Science (ASHS)
+        </li>
 
-        <div class="membership-item">
+        <li>
           Nepal Horticulture Society
-        </div>
+        </li>
 
-      </div>
+      </ul>
 
     </section>
 
@@ -694,17 +730,15 @@
   </main>
 
 
-
   <!-- =========================
        FOOTER
-       ========================= -->
+  ========================= -->
 
   <footer>
-
     © 2026 Deva Raj Khanal
-
   </footer>
 
 
 </body>
+
 </html>
