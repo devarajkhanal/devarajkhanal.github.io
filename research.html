@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Research &amp; Experience | Deva Raj Khanal</title>
+  <title>Publications &amp; Presentations | Deva Raj Khanal</title>
 
   <meta
     name="description"
-    content="Research experience of Deva Raj Khanal in plant diversity, genetic resources, phenotyping, molecular research, phylogenetics, environmental variation, and horticultural crops."
+    content="Publications, presentations, fellowships, grants, recognition, training, and professional memberships of Deva Raj Khanal."
   >
 
   <style>
@@ -72,7 +72,7 @@
     .nav-links a {
       color: #303030;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .nav-links a:hover {
@@ -95,12 +95,12 @@
        SECTION HEADINGS
     ========================= */
 
-    .research-section {
+    .section {
       margin-bottom: 70px;
     }
 
-    .research-section > h2 {
-      margin-bottom: 32px;
+    .section > h2 {
+      margin-bottom: 30px;
 
       color: #1f1f1f;
       font-size: 32px;
@@ -111,191 +111,182 @@
 
 
     /* =========================
-       GRADUATE RESEARCH
+       PUBLICATIONS
     ========================= */
 
-    .research-entry {
-      margin-bottom: 48px;
+    .publications-list {
+      list-style: none;
+      counter-reset: publication;
     }
 
-    .research-entry:last-child {
-      margin-bottom: 0;
-    }
+    .publications-list li {
+      counter-increment: publication;
 
-    .entry-meta {
-      margin-bottom: 8px;
+      position: relative;
 
-      color: #555555;
-      font-size: 16px;
-      font-weight: 600;
-    }
-
-    .research-entry h3 {
-      margin-bottom: 13px;
-
-      color: #222222;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 1.35;
-    }
-
-    .research-entry h3 a {
-      color: #222222;
-      text-decoration: none;
-    }
-
-    .research-entry h3 a:hover {
-      color: #2f6f4e;
-      text-decoration: underline;
-    }
-
-    .research-entry p.description {
-      max-width: 1000px;
-
-      margin-bottom: 12px;
+      margin-bottom: 23px;
+      padding-left: 34px;
 
       color: #3d3d3d;
-      font-size: 17px;
+      font-size: 16.5px;
       line-height: 1.7;
     }
 
-    .research-link {
+    .publications-list li::before {
+      content: counter(publication) ".";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      color: #222222;
+      font-weight: 600;
+    }
+
+    .publications-list em {
+      color: #303030;
+    }
+
+    .publication-link {
       color: #2f6f4e;
+      font-weight: 600;
+    }
+
+    .publication-link:hover {
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       PRESENTATIONS
+       Three photos side by side
+    ========================= */
+
+    .presentation-grid {
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .presentation-item {
+      width: 100%;
+    }
+
+    .presentation-item img {
+      width: 100%;
+      height: 400px;
+
+      display: block;
+
+      object-fit: contain;
+      object-position: center;
+
+      background: #ffffff;
+    }
+
+    .presentation-caption {
+      margin-top: 11px;
+
+      color: #4a4a4a;
       font-size: 15px;
-      font-weight: 600;
-    }
-
-    .research-link:hover {
-      color: #1f5136;
-      text-decoration: underline;
+      line-height: 1.5;
     }
 
 
     /* =========================
-       RESEARCH EXPERIENCE
+       FELLOWSHIPS, GRANTS &
+       RECOGNITION
     ========================= */
 
-    .experience-entry {
-      margin-bottom: 65px;
+    .record-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
     }
 
-    .experience-entry:last-child {
-      margin-bottom: 0;
+    .record-item {
+      display: grid;
+      grid-template-columns: 42% 58%;
+      column-gap: 20px;
+
+      padding-bottom: 18px;
+
+      border-bottom: 1px solid #dededb;
     }
 
-    .experience-entry h3 {
-      margin-bottom: 6px;
+    .record-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
 
+    .record-title {
       color: #222222;
-      font-size: 25px;
-      font-weight: 600;
-      line-height: 1.3;
-    }
-
-    .experience-meta {
-      margin-bottom: 16px;
-
-      color: #555555;
-      font-size: 16px;
-      font-weight: 600;
-    }
-
-    .experience-entry p {
-      max-width: 1050px;
-
-      margin-bottom: 22px;
-
-      color: #3d3d3d;
       font-size: 17px;
-      line-height: 1.7;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .record-details {
+      color: #4a4a4a;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .record-description {
+      margin-top: 3px;
     }
 
 
     /* =========================
-       EXPERIENCE PHOTO ROW
-       Four images on one line
+       PROFESSIONAL TRAINING
     ========================= */
 
-    .experience-images {
-      width: 100%;
-
+    .training-item {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
+      grid-template-columns: 42% 58%;
+      column-gap: 20px;
 
-      margin-top: 22px;
+      padding-bottom: 18px;
+
+      border-bottom: 1px solid #dededb;
     }
 
-    .experience-images img {
-      width: 100%;
-      height: 220px;
+    .training-title {
+      color: #222222;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
 
-      display: block;
-
-      object-fit: contain;
-      object-position: center;
-
-      background: #ffffff;
+    .training-details {
+      color: #4a4a4a;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
 
     /* =========================
-       INTERNSHIP PHOTOS
-       Two images side by side
+       PROFESSIONAL MEMBERSHIPS
     ========================= */
 
-    .internship-images {
-      width: 100%;
-
+    .membership-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-
-      margin-top: 22px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-    .internship-images img {
-      width: 100%;
-      height: 300px;
-
-      display: block;
-
-      object-fit: contain;
-      object-position: center;
-
-      background: #ffffff;
-    }
-
-
-    /* =========================
-       RESEARCH SKILLS & METHODS
-    ========================= */
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px 40px;
-    }
-
-    .skill-item {
-      padding-top: 20px;
+    .membership-item {
+      padding-top: 18px;
 
       border-top: 1px solid #dededb;
     }
 
-    .skill-item h3 {
-      margin-bottom: 8px;
-
+    .membership-item strong {
       color: #222222;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 1.35;
-    }
-
-    .skill-item p {
-      color: #3d3d3d;
       font-size: 16px;
-      line-height: 1.65;
+      font-weight: 600;
+      line-height: 1.5;
     }
 
 
@@ -334,16 +325,21 @@
         padding: 55px 25px 75px;
       }
 
-      .experience-images {
+      .presentation-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .experience-images img {
-        height: 240px;
+      .presentation-item img {
+        height: 350px;
       }
 
-      .skills-grid {
-        grid-template-columns: 1fr;
+      .record-item,
+      .training-item {
+        grid-template-columns: 38% 62%;
+      }
+
+      .membership-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
     }
@@ -380,53 +376,43 @@
         padding: 45px 20px 65px;
       }
 
-      .research-section {
+      .section {
         margin-bottom: 55px;
       }
 
-      .research-section > h2 {
+      .section > h2 {
         margin-bottom: 25px;
         font-size: 29px;
       }
 
-      .research-entry h3 {
-        font-size: 21px;
-      }
-
-      .entry-meta,
-      .experience-meta {
-        font-size: 15px;
-      }
-
-      .research-entry p.description,
-      .experience-entry p {
+      .publications-list li {
+        padding-left: 30px;
         font-size: 16px;
       }
 
-      .experience-entry h3 {
-        font-size: 22px;
-      }
-
-      .experience-images {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-
-      .experience-images img {
-        height: 190px;
-      }
-
-      .internship-images {
+      .presentation-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 28px;
       }
 
-      .internship-images img {
-        height: 260px;
+      .presentation-item img {
+        height: 360px;
       }
 
-      .skills-grid {
+      .record-item,
+      .training-item {
+        display: block;
+        padding-bottom: 20px;
+      }
+
+      .record-title,
+      .training-title {
+        margin-bottom: 5px;
+      }
+
+      .membership-grid {
         grid-template-columns: 1fr;
+        gap: 18px;
       }
 
     }
@@ -438,16 +424,8 @@
 
     @media (max-width: 450px) {
 
-      .experience-images {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .experience-images img {
-        height: 150px;
-      }
-
-      .internship-images img {
-        height: 230px;
+      .presentation-item img {
+        height: 300px;
       }
 
     }
@@ -505,318 +483,246 @@
 
 
     <!-- =========================
-         COMPLETED RESEARCH PROJECTS
+         PUBLICATIONS
     ========================= -->
 
-    <section class="research-section">
+    <section class="section">
 
       <h2>
-        Completed Research Projects (Graduate Thesis)
+        Publications
       </h2>
 
+      <ol class="publications-list">
 
-      <!-- Mango Thesis -->
+        <li>
+          Tuladhar, A., and D. R. Khanal. 2024.
+          <em>Coffee production and pest control in pocket areas of Nepal, a brief review.</em>
+          In: <em>III International Symposium on Beverage Crops</em>,
+          Acta Horticulturae 1387, 277–282.
+        </li>
 
-      <article class="research-entry">
+        <li>
+          Khanal, D. R. 2023.
+          <em>Disentangling the Complex Evolutionary History of Invasive Russian Thistle:
+          Phylogenetic Relationships, the Role of Hybridization, and Public Engagement.</em>
+          South Dakota State University.
+          <a
+            href="https://search.proquest.com/openview/ff9dba6d31e20028058ed3593da28e98/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="publication-link"
+          >
+            Thesis
+          </a>
+        </li>
 
-        <h3>
-          Climatic niche characterization of <em>Mangifera indica</em> (2026)
-        </h3>
+        <li>
+          Khanal, D. R., K. Ehlert, and M. Latvis. 2022.
+          <em>Prickly Russian Thistle: Classification and Related Species in South Dakota and the United States.</em>
+          South Dakota State University Extension, P-00238.
+          <a
+            href="https://extension.sdstate.edu/sites/default/files/2022-05/P-00238.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="publication-link"
+          >
+            PDF
+          </a>
+        </li>
 
-        <p class="description">
-          This study examined climatic variation associated with cultivated Mango across its region of domestication and 
-          introduced ranges, using georeferenced botanical records and environmental datasets.
-        </p>
+        <li>
+          Khanal, D. R., K. Ehlert, and M. Latvis. 2022.
+          <em>Prickly Russian Thistle: History, Identification, Challenges and Management Strategies.</em>
+          South Dakota State University Extension, P-00237.
+          <a
+            href="https://extension.sdstate.edu/sites/default/files/2022-05/P-00237.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="publication-link"
+          >
+            PDF
+          </a>
+        </li>
 
-        <a href="#" class="research-link">
-          Read more about my thesis
-        </a>
+        <li>
+          Tuladhar, A., and D. R. Khanal. 2018.
+          <em>Coffee production in Nepal: A brief review.</em>
+          In: <em>II International Symposium on Beverage Crops</em>,
+          Acta Horticulturae 1274, 161–166.
+        </li>
 
-      </article>
-
-
-      <!-- Russian Thistle Thesis -->
-
-      <article class="research-entry">
-
-        <h3>
-          Disentangling the Complex Evolutionary History of Invasive Russian Thistle (2022)
-        </h3>
-
-        <p class="description">
-         This study examined phylogenetic relationships and evolutionary history within the invasive Russian 
-          thistle group using target-capture sequencing approaches and bioinformatic analyses.
-        </p>
-
-        <a
-          href="https://search.proquest.com/openview/ff9dba6d31e20028058ed3593da28e98/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="research-link"
-        >
-          Read more about my thesis
-        </a>
-
-      </article>
+      </ol>
 
     </section>
 
 
 
     <!-- =========================
-         WORK EXPERIENCE
+         PRESENTATIONS
     ========================= -->
 
-    <section class="research-section">
+    <section class="section">
 
       <h2>
-        Work Experience
+        Presentations
       </h2>
 
-
-      <!-- =========================
-           SAINT LOUIS UNIVERSITY
-      ========================= -->
-
-      <article class="experience-entry">
-
-        <h3>
-          Graduate Research Assistant
-        </h3>
-
-        <p class="experience-meta">
-          Saint Louis University &amp; Missouri Botanical Garden | 2022–2026
-        </p>
-
-        <p>
-
-Conducted climatic variation analyses using georeferenced botanical records and environmental datasets, 
-          along with DNA extraction, sample quality assessment, inventory management, and leaf trait 
-          and hyperspectral reflectance data collection.
-        </p>
+      <div class="presentation-grid">
 
 
-        <div class="experience-images">
+        <div class="presentation-item">
 
           <img
-            src="images/mobot_1.jpeg"
-            alt="Research at Missouri Botanical Garden"
+            src="images/oral_1.jpeg"
+            alt="Participation at Invasion Genomics Conference"
           >
 
-          <img
-            src="images/mobot_2.jpeg"
-            alt="Research at Missouri Botanical Garden"
-          >
-
-          <img
-            src="images/spectral_2.jpeg"
-            alt="Hyperspectral plant phenotyping research"
-          >
-
-          <img
-            src="images/field_work_stl_1.jpeg"
-            alt="Field research in St. Louis"
-          >
-          
-        </div>
-
-      </article>
-
-
-
-      <!-- =========================
-           SOUTH DAKOTA STATE UNIVERSITY
-      ========================= -->
-
-      <article class="experience-entry">
-
-        <h3>
-          Graduate Research &amp; Teaching Assistant
-        </h3>
-
-        <p class="experience-meta">
-          South Dakota State University | 2019–2022
-        </p>
-
-        <p>
-          Conducted molecular and phylogenetic research involving voucher records, DNA extraction and quantification, 
-          sample management, post-sequencing analysis, phylogenetic inferenecs, and bioinformatics.
-          <p>
-          <p>
-          Served teaching assistants for Range Plant Identification and Plant Systematics (undergraduate level).
-        </p>
-
-
-        <div class="experience-images">
-
-          <img
-            src="images/sdsu_3.jpeg"
-            alt="Research at South Dakota State University"
-          >
-
-          <img
-            src="images/sdsu_lab_3.JPG"
-            alt="Lab research at South Dakota State University"
-          >
-
-          <img
-            src="images/sdsu_herb.jpeg"
-            alt="Herbarium research at South Dakota State University"
-          >
-
-          <img
-            src="images/sdsu_ms_exit.jpeg"
-            alt="South Dakota State University research"
-          >
-          
-        </div>
-
-      </article>
-
-
-
-      <!-- =========================
-           INTERNSHIP WORK
-      ========================= -->
-
-      <article class="experience-entry">
-
-        <h3>
-          Research Intern
-        </h3>
-
-        <p class="experience-meta">
-          Nepal Agricultural Research Council (ARS, Ilam)
-        </p>
-
-        <p>
-          Conducted field trials, plant care, floriculture feasibility assessments, 
-          disease scoring, and several agricultural extension activities. 
-        </p>
-
-
-        <div class="internship-images">
-
-          <img
-            src="images/tulip_ilam_1.JPG"
-            alt="Tulip horticultural work in Ilam, Nepal"
-          >
-
-          <img
-            src="images/tulip_2.JPG"
-            alt="Tulip horticultural field work"
-          >
-          
-        </div>
-
-      </article>
-
-    </section>
-
-
-
-    <!-- =========================
-         RESEARCH SKILLS & METHODS
-    ========================= -->
-
-    <section class="research-section">
-
-      <h2>
-        Research Skills &amp; Methods
-      </h2>
-
-
-      <div class="skills-grid">
-
-
-        <div class="skill-item">
-
-          <h3>
-            Botanical Collections &amp; Herbarium 
-          </h3>
-
-          <p>
-            Sampling, specimen handling, non/destructive sampling, labeling,
-            filing, metadata organization, voucher preparation,
-            documentation, and herbarium collection management. 
+          <p class="presentation-caption">
+            Participation, Invasion Genomics Conference, Lafayette, Louisiana, 2021.
           </p>
 
         </div>
 
 
-        <div class="skill-item">
+        <div class="presentation-item">
 
-          <h3>
-            Field Research
-          </h3>
+          <img
+            src="images/oral_2.jpeg"
+            alt="Oral presentation at Invasion Genomics Conference"
+          >
 
-          <p>
-            Planting, crop care, data collection, propagation, phenology observations, pruning, weeding, harvesting 
-            and field-based work with perennial
-            and horticultural crops.
+          <p class="presentation-caption">
+            Oral presentation, Invasion Genomics Conference, Lafayette, Louisiana, 2021.
           </p>
 
         </div>
 
 
-        <div class="skill-item">
+        <div class="presentation-item">
 
-          <h3>
-            Trait measurement &amp; Phenotyping 
-          </h3>
+          <img
+            src="images/poster_1.jpeg"
+            alt="Mangifera phylogeny poster presentation"
+          >
 
-          <p>
-            Trait data collection, specimen measurements, non-destructive phenotyping, hyperspectral reflectance data collection (VIS-SWIR),
-            trait characterization, and integration of plant observations with environmental information.
-          </p>
-
-        </div>
-
-
-        <div class="skill-item">
-
-          <h3>
-            Molecular Laboratory Methods
-          </h3>
-
-          <p>
-            Plant DNA extraction (fresh and dried tissues), DNA quality assessment and quantification (Qubit and NanoDrop/gel electrophoresis),
-            preparation and molecular sample organization, sample tracking, and laboratory workflows 
-            supporting plant genetic and phylogenetic research.
-          </p>
-
-        </div>
-
-
-        <div class="skill-item">
-
-          <h3>
-            Phylogenetic Methods &amp; Bioinformatics
-          </h3>
-
-          <p>
-            Phylogenetic research (gene trees, species trees approaches), evolutionary relationship assessment, hybrid assesment,
-            post-sequencing data analysis, and bioinformatics workflows for plant molecular data.
-          </p>
-
-        </div>
-
-
-        <div class="skill-item">
-
-          <h3>
-            Environmental &amp; Geospatial Data
-          </h3>
-
-          <p>
-            Georeferenced plant records, botanical occurrence data, environmental datasets, climatic variables, 
-            spatially associated plant observations, and analysis of environmental variation in relation to plant distributions.
+          <p class="presentation-caption">
+            Phylogeny poster presentation, International Mango Symposium, Málaga, Spain, 2023.
           </p>
 
         </div>
 
 
       </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FELLOWSHIPS, GRANTS &
+         RECOGNITION
+    ========================= -->
+
+    <section class="section">
+
+      <h2>
+        Fellowships, Grants &amp; Recognition
+      </h2>
+
+      <div class="record-list">
+
+
+        <div class="record-item">
+
+          <div class="record-title">
+            William L. Brown Graduate Student Fellowship
+          </div>
+
+          <div class="record-details">
+            Missouri Botanical Garden (2022–2026)
+
+            <div class="record-description">
+              Graduate fellowship supporting graduate program in collaboration with Saint Louis University.
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="record-item">
+
+          <div class="record-title">
+            Summer School TaxonOmics
+          </div>
+
+          <div class="record-details">
+            University of Munich, Munich Botanical Garden, Germany (2023)
+
+            <div class="record-description">
+              Fully funded two-week graduate training program in botanical research.
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="record-item">
+
+          <div class="record-title">
+            NRM Outstanding Biological Science Graduate Student Award
+          </div>
+
+          <div class="record-details">
+            South Dakota State University (2022)
+          </div>
+
+        </div>
+
+
+        <div class="record-item">
+
+          <div class="record-title">
+            Graduate Student Research Grant ($1,500)
+          </div>
+
+          <div class="record-details">
+            American Society of Plant Taxonomists (2021)
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROFESSIONAL MEMBERSHIPS
+    ========================= -->
+
+    <section class="section">
+
+      <h2>
+        Professional Memberships
+      </h2>
+
+      <ul class="membership-list">
+
+        <li>
+          Botanical Society of America (BSA)
+        </li>
+
+        <li>
+          American Society for Horticultural Science (ASHS)
+        </li>
+
+        <li>
+          Nepal Horticulture Society
+        </li>
+
+      </ul>
 
     </section>
 
